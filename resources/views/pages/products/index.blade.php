@@ -21,10 +21,9 @@
                         <h5 class="mb-0">List</h5>
                     </div>
                     <x-datatable :url="route('products.list')"
-                                 :index="['DT_RowIndex', 'name', 'description', 'status','action']">
+                                 :index="['DT_RowIndex', 'name', 'status','action']">
                         <th>No</th>
                         <th>Name</th>
-                        <th>Description</th>
                         <th>Status</th>
                         <th>Action</th>
                     </x-datatable>
