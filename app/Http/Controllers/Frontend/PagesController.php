@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Interfaces\BlogRepositoryInterface;
+use App\Interfaces\HomepageRepositoryInterface;
 use App\Interfaces\ProductCategoryRepositoryInterface;
 use App\Interfaces\ProductRepositoryInterface;
 use App\Models\Product;
@@ -14,6 +15,7 @@ class PagesController extends Controller
 
     public function __construct(
         private ProductRepositoryInterface         $productRepository,
+        private HomepageRepositoryInterface       $homepageRepository,
         private ProductCategoryRepositoryInterface $productCategoryRepository,
         private BlogRepositoryInterface $blogRepository,
     )
@@ -23,10 +25,11 @@ class PagesController extends Controller
 
     public function index()
     {
+        $sliders = $this->homepageRepository->list();
         $products = $this->productRepository->activeList();
         $fProducts = $this->productRepository->featuresServices();
         $category = $this->productCategoryRepository->parentCategory();
-        return view('frontend.index',compact('products','category','fProducts'));
+        return view('frontend.index',compact('products','category','fProducts','sliders'));
     }
 
     public function about()

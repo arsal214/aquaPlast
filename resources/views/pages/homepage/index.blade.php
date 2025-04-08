@@ -2,7 +2,6 @@
 
     <x-breadcrumb title="HomePage Management">
                 @can('homepage-create')
-        @if(count($homepage) <= 0)
             <a href="{{ route('pages.homepage.create') }}"
                class="btn btn-outline-primary btn-labeled btn-labeled-start rounded-pill">
             <span class="btn-labeled-icon bg-primary text-white rounded-pill">
@@ -10,7 +9,6 @@
             </span>
                 Create New
             </a>
-        @endif
                 @endcan
     </x-breadcrumb>
 

@@ -16,8 +16,8 @@ return new class extends Migration
             $table->foreignId('category_id')->constrained()->onDelete('cascade');
             $table->unsignedBigInteger('subcategory_id')->nullable();
             $table->string('name')->nullable();
-            $table->string('short_description')->nullable();
-            $table->text('description')->nullable();
+            $table->longText('short_description')->nullable();
+            $table->longText('description')->nullable();
             $table->enum('status',['Active','DeActive'])->default('Active');
             $table->enum('is_popular',['Yes','No'])->default('No');
             $table->enum('is_featured',['Yes','No'])->default('No');

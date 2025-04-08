@@ -73,33 +73,17 @@ class HomePageController extends BaseController
                 'description' => 'required',
             ]);
 
-            $data = $request->except(['thumbnail','image_1','image_2','image_3','image_4','image_5']);
+            $data = $request->except(['thumbnail']);
 
             if ($request->hasFile('thumbnail')) {
                 $data['thumbnail'] =  $this->uploadFile($request->file('thumbnail'), 'homepage');
-            }
-            if ($request->hasFile('image_1')) {
-                $data['image_1'] =  $this->uploadFile($request->file('image_1'), 'homepage');
-            }
-            if ($request->hasFile('image_2')) {
-                $data['image_2'] =  $this->uploadFile($request->file('image_2'), 'homepage');
-            }
-            if ($request->hasFile('image_3')) {
-                $data['image_3'] =  $this->uploadFile($request->file('image_3'), 'homepage');
-
-            }
-            if ($request->hasFile('image_4')) {
-                $data['image_4'] =  $this->uploadFile($request->file('image_4'), 'homepage');
-            }
-            if ($request->hasFile('image_5')) {
-                $data['image_5'] =  $this->uploadFile($request->file('image_5'), 'homepage');
             }
 
             $this->homepageRepository->storeOrUpdate($data);
         } catch (\Throwable $th) {
             return redirect()->back()->withErrors(['msg' => $th->getMessage()]);
         }
-        return $this->redirectSuccess(route('pages.homepage.index'), 'Homepage created successfully.');
+        return $this->redirectSuccess(route('pages.homepage.index'), 'Slider created successfully.');
     }
 
 
@@ -123,28 +107,12 @@ class HomePageController extends BaseController
                 'description' => 'required',
             ]);
 
-            $data = $request->except(['thumbnail','image_1','image_2','image_3','image_4','image_5']);
-
+            $data = $request->except(['thumbnail']);
+              
             if ($request->hasFile('thumbnail')) {
                 $data['thumbnail'] =  $this->uploadFile($request->file('thumbnail'), 'homepage');
             }
-            if ($request->hasFile('image_1')) {
-                $data['image_1'] =  $this->uploadFile($request->file('image_1'), 'homepage');
-            }
-            if ($request->hasFile('image_2')) {
-                $data['image_2'] =  $this->uploadFile($request->file('image_2'), 'homepage');
-            }
-            if ($request->hasFile('image_3')) {
-                $data['image_3'] =  $this->uploadFile($request->file('image_3'), 'homepage');
-
-            }
-            if ($request->hasFile('image_4')) {
-                $data['image_4'] =  $this->uploadFile($request->file('image_4'), 'homepage');
-            }
-            if ($request->hasFile('image_5')) {
-                $data['image_5'] =  $this->uploadFile($request->file('image_5'), 'homepage');
-            }
-
+        
             $this->homepageRepository->storeOrUpdate($data, $id);
         } catch (\Throwable $th) {
             return redirect()->back()->withErrors(['msg' => $th->getMessage()]);
@@ -152,19 +120,19 @@ class HomePageController extends BaseController
         return $this->redirectSuccess(route('pages.homepage.index'), 'Homepage Updated successfully.');
     }
 
-//    /**
-//     * Remove the specified resource from storage.
-//     */
-//    public function destroy(string $id)
-//    {
-//        try {
-//            $about = $this->aboutRepository->findById($id);
-//            $about->delete();
-//        } catch (\Throwable $th) {
-//            return $this->redirectError($th->getMessage());
-//        }
-//        return  $this->redirectSuccess(route('pages.about-us.index'), 'About deleted successfully');
-//    }
+   /**
+    * Remove the specified resource from storage.
+    */
+   public function destroy(string $id)
+   {
+       try {
+           $about = $this->homepageRepository->findById($id);
+           $about->delete();
+       } catch (\Throwable $th) {
+           return $this->redirectError($th->getMessage());
+       }
+       return  $this->redirectSuccess(route('pages.about-us.index'), 'About deleted successfully');
+   }
 
 
 }

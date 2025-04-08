@@ -12,7 +12,7 @@ class HomePage extends Model
 
     protected $table = 'homepage_sliders';
 
-    protected $fillable = ['title', 'description', 'thumbnail', 'image_1', 'image_2', 'image_3', 'image_4', 'image_5'];
+    protected $fillable = ['title', 'description', 'thumbnail'];
 
     /**
      * The attributes that should be hidden for serialization.
