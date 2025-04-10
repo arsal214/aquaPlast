@@ -50,7 +50,7 @@ class PagesController extends Controller
     {
 
         $product = $this->productRepository->findById($id);
-        $product->load(['category', 'images']);
+        $product->load(['category', 'images','faqs']);
         $relatedProducts = Product::with(['images'])->where('category_id', $product->category_id)
             ->where('id', '!=', $product->id) // Exclude current product
             ->inRandomOrder() // Randomize results

@@ -198,36 +198,71 @@
 
 
     <script>
-        // This function will be called when a category is selected
-        function getSubcategories() {
-            var categoryId = document.querySelector('select[name="category_id"]').value;
+        // // This function will be called when a category is selected
+        // function getSubcategories() {
+        //     var categoryId = document.querySelector('select[name="category_id"]').value;
 
-            // Clear previous subcategory options
-            var subcategorySelect = document.querySelector('select[name="subcategory_id"]');
-            subcategorySelect.innerHTML = '<option value="">Select Subcategory</option>';
+        //     // Clear previous subcategory options
+        //     var subcategorySelect = document.querySelector('select[name="subcategory_id"]');
+        //     subcategorySelect.innerHTML = '<option value="">Select Subcategory</option>';
 
-            if (categoryId) {
-                // Make an AJAX call to get subcategories based on selected category
-                fetch('/catalog/get-subcategories/' + categoryId)
-                    .then(response => response.json())
-                    .then(data => {
-                        data.subcategories.forEach(function (subcategory) {
-                            var option = document.createElement('option');
-                            option.value = subcategory.id;
-                            option.textContent = subcategory.name;
-                            subcategorySelect.appendChild(option);
-                        });
-                    })
-                    .catch(error => console.error('Error fetching subcategories:', error));
-            }
-        }
+        //     if (categoryId) {
+        //         // Make an AJAX call to get subcategories based on selected category
+        //         fetch('/catalog/get-subcategories/' + categoryId)
+        //             .then(response => response.json())
+        //             .then(data => {
+        //                 data.subcategories.forEach(function (subcategory) {
+        //                     var option = document.createElement('option');
+        //                     option.value = subcategory.id;
+        //                     option.textContent = subcategory.name;
+        //                     subcategorySelect.appendChild(option);
+        //                 });
+        //             })
+        //             .catch(error => console.error('Error fetching subcategories:', error));
+        //     }
+        // }
 
-        // Call getSubcategories on page load to show the correct subcategory if editing
-        document.addEventListener('DOMContentLoaded', function () {
-            if (document.querySelector('select[name="category_id"]').value) {
-                getSubcategories();
-            }
-        });
+        // // Call getSubcategories on page load to show the correct subcategory if editing
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     if (document.querySelector('select[name="category_id"]').value) {
+        //         getSubcategories();
+        //     }
+        // });
+
+
+        function getSubcategories(selectedSubcategoryId = null) {
+    var categoryId = document.querySelector('select[name="category_id"]').value;
+    var subcategorySelect = document.querySelector('select[name="subcategory_id"]');
+    subcategorySelect.innerHTML = '<option value="">Select Subcategory</option>';
+
+    if (categoryId) {
+        fetch('/catalog/get-subcategories/' + categoryId)
+            .then(response => response.json())
+            .then(data => {
+                data.subcategories.forEach(function (subcategory) {
+                    var option = document.createElement('option');
+                    option.value = subcategory.id;
+                    option.textContent = subcategory.name;
+
+                    if (selectedSubcategoryId && selectedSubcategoryId == subcategory.id) {
+                        option.selected = true;
+                    }
+
+                    subcategorySelect.appendChild(option);
+                });
+            })
+            .catch(error => console.error('Error fetching subcategories:', error));
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    var initialCategoryId = document.querySelector('select[name="category_id"]').value;
+    var selectedSubcategoryId = "{{ $service->subcategory_id ?? '' }}";
+
+    if (initialCategoryId) {
+        getSubcategories(selectedSubcategoryId);
+    }
+});
 
 
         document.addEventListener('DOMContentLoaded', function () {

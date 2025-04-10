@@ -71,6 +71,28 @@
                     </div>
                 </div>
             </div>
+
+            <div id="accordion">
+                @foreach ($product->faqs as $index => $faq)
+                    <div class="card">
+                        <div class="card-header" id="heading{{ $index }}">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ $index }}" aria-expanded="false" aria-controls="collapse{{ $index }}">
+                                    {{ $faq->question }}
+                                </button>
+                            </h5>
+                        </div>
+            
+                        <div id="collapse{{ $index }}" class="collapse" aria-labelledby="heading{{ $index }}" data-parent="#accordion">
+                            <div class="card-body">
+                                {{ $faq->answers }}
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+            
+
             <div class="latest-product">
                 <h2 class="product-price pb-3" style="text-align: center;">Related Product</h2>
                 <div class="row">

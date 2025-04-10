@@ -120,10 +120,11 @@ class ProductController extends BaseController
     public function edit($id)
     {
         $service = $this->productRepository->findById($id);
+        
         $parentCategories = $this->productCategoryRepository->activeList();
 
         $subCategories = $this->productCategoryRepository->nestedCategories();
-        $service->load('images','faqs');
+        $service->load('images','faqs','category','subCategory');
 
         return view('pages.products.edit', compact('service','parentCategories','subCategories'));
     }
@@ -141,6 +142,7 @@ class ProductController extends BaseController
             $data = $request->except(['images','faqs']);
             $service = $this->productRepository->storeOrUpdate($data,$id);
             if($request->hasFile('image')){
+                $serviceFaq = ProductImage::where('product_id', $service->id)->delete();
                 $serviceImage = new ProductImage();
                 $serviceImage->product_id = $service->id;
                 $url = $this->uploadFile($request->image, 'products/images');
