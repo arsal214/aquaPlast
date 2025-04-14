@@ -1,7 +1,7 @@
 <x-app-layout title="Teams">
 
     <x-breadcrumb title="Teams">
-        {{-- @can('blogs-create') --}}
+        
             <a href="{{ route('pages.teams.create') }}"
                class="btn btn-outline-primary btn-labeled btn-labeled-start rounded-pill">
             <span class="btn-labeled-icon bg-primary text-white rounded-pill">
@@ -9,8 +9,8 @@
             </span>
                 Create New
             </a>
-        @endcan
-    {{-- </x-breadcrumb> --}}
+        
+    </x-breadcrumb>
 
     <!-- Content area -->
     <div class="content">
