@@ -1,14 +1,14 @@
 @extends('frontend.layouts.app')
 
 @section('template_title')
-    Aqua Plast | Privacy Policy . {{$privacyPolicy->title}}
+    Aqua Plast | Privacy Policy
 @endsection
 
 @section('content')
-<section class="page-title blog-page" style="background-image:url({{ env('APP_URL') . $privacyPolicy->image }})">
+<section class="page-title blog-page" style="background-image:url({{ env('APP_URL') . $privacyPolicy?->image }})">
     <div class="container">
         <div class="content-box">
-            <h1>{{ $privacyPolicy->title }}</h1>
+            <h1>{{ $privacyPolicy?->title }}</h1>
         </div>
     </div>
 </section>
@@ -22,7 +22,7 @@
                     <div class="blog-single-content">
 
 
-                        {!! $privacyPolicy->body !!}
+                        {!! $privacyPolicy?->body !!}
                     </div>
                 </div>
             </div>
