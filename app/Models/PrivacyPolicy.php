@@ -12,9 +12,12 @@ class PrivacyPolicy extends Model
 
     protected $table = 'privacy_policy';
 
-    protected $fillable = ['title','description'];
+    protected $fillable = ['title','description','image'];
 
-
+    public function getImageAttribute($value)
+    {
+        return $value ? '/images/privacy/'.$value : null;
+    }
 
     /**
      * The attributes that should be hidden for serialization.

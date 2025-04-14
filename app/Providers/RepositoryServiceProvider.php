@@ -13,6 +13,7 @@ use App\Interfaces\{BlogRepositoryInterface,
     ProductRepositoryInterface,
     TermConditionRepositoryInterface,
     AboutRepositoryInterface,
+    TeamRepositoryInterface,
     UserRepositoryInterface};
 
 use App\Repositories\{
@@ -26,6 +27,7 @@ use App\Repositories\{
     BlogRepository,
     TermConditionRepository,
     AboutRepository,
+    TeamRepository,
     UserRepository,
     };
 
@@ -47,6 +49,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(ContactUsRepositoryInterface::class, ContactUsRepository::class);
         $this->app->bind(TermConditionRepositoryInterface::class, TermConditionRepository::class);
         $this->app->bind(PrivacyPolicyRepositoryInterface::class, PrivacyPolicyRepository::class);
+        $this->app->bind(TeamRepositoryInterface::class, TeamRepository::class);
 
     }
 

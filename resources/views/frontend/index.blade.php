@@ -17,7 +17,7 @@ Aqua Plast | Home
                 <div class="container">
                     <div class="content-box">
                         <h1>{{  $slider->title }}</h1>
-                        <h3>{{ $slider->title }}</h3>
+                        <h3>{{ $slider->description }}</h3>
                     </div>
                 </div>
             </div>

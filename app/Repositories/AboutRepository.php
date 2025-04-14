@@ -17,6 +17,14 @@ class AboutRepository implements AboutRepositoryInterface
         return About::latest()->get();
     }
 
+    /**
+     * All Plans list.
+     */
+    public function detail()
+    {
+        return About::first();
+    }
+
 
     /**
      * Create or update plan.

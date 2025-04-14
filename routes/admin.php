@@ -22,6 +22,7 @@ use App\Http\Controllers\Admin\CrewController;
 use App\Http\Controllers\Admin\PrivacyPolicyController;
 use App\Http\Controllers\Admin\BriefController;
 use App\Http\Controllers\Admin\TermConditionController;
+use App\Http\Controllers\Admin\TeamController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -97,14 +98,6 @@ Route::resource('products', ProductController::class);
 
 
 /**
- * Plan Routes.
- */
-Route::patch('plans/change/{id}', 'PlanController@change')->name('plans.change');
-Route::get('plans/list', 'PlanController@list')->name('plans.list');
-Route::resource('plans', PlanController::class)->except('show');
-
-
-/**
  * Pages Routes.
  */
 Route::prefix('pages')->as('pages.')->group(function () {
@@ -123,6 +116,9 @@ Route::prefix('pages')->as('pages.')->group(function () {
     Route::resource('homepage', HomePageController::class);
 
 
+    /* -------------------------  About Routes ------------------------ */
+    Route::get('teams/list', 'TeamController@list')->name('teams.list');
+    Route::resource('teams', TeamController::class);
 
 
     /* -------------------------  FAQ Routes ------------------------ */

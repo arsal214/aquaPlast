@@ -2,16 +2,16 @@
 
 namespace App\Interfaces;
 
-interface AboutRepositoryInterface
+interface TeamRepositoryInterface
 {
-
     public function list();
 
-    public function detail();
+    public function activeList();
 
     public function storeOrUpdate(array $data, $id = null);
 
     public function findById($id);
 
     public function destroyById($id);
+
 }

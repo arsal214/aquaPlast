@@ -9,11 +9,17 @@
             <x-input col="12" type="textarea" title="Content" name="description" :value="$term->description ?? null"  class="tinymce"/>
 
         </div>
+    </div>.
+
+    <div class="col-md-4">
+        <div class="row">
+            <x-input name="image" type="dropify" :defaultFile="$term->image ?? null" dropifyHeight="202" />
+        </div>
     </div>
 
 </div>
 
 @push('scripts')
-    <script src="{{ asset('assets/js/vendor/tinymce/tinymce.min.js') }}"></script>
-    <script src="{{ asset('assets/js/tinymce.js') }}"></script>
+<script src="{{ asset('backend/assets/js/vendor/tinymce/tinymce.min.js') }}"></script>
+<script src="{{ asset('backend/assets/js/tinymce.js') }}"></script>
 @endpush

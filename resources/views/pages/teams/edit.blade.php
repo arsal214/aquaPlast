@@ -1,6 +1,6 @@
-<x-app-layout title="Update Blogs">
+<x-app-layout title="Update Teams">
 
-    <x-breadcrumb title="Update Blogs" :back-button="route('pages.blogs.index')" />
+    <x-breadcrumb title="Update Teams" :back-button="route('pages.teams.index')" />
 
 
     <!-- Content area -->
@@ -9,13 +9,13 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="mb-0">{{ __('Update') }} Blog</h5>
+                        <h5 class="mb-0">{{ __('Update') }} Team</h5>
                     </div>
                     <div class="card-body">
-                        <x-form :route="route('pages.blogs.update', $blog->id)">
+                        <x-form :route="route('pages.blogs.update', $team->id)">
                             {{ method_field('PATCH') }}
-                            <input type="hidden" name="old_img" value="{{ $blog->image ?? '' }}">
-                            @include('pages.blogs.form')
+                            <input type="hidden" name="old_img" value="{{ $team->image ?? '' }}">
+                            @include('pages.teams.form')
                         </x-form>
                     </div>
                 </div>

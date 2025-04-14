@@ -9,11 +9,11 @@
 
     <!-- about-banner -->
     <section class="about-banner"
-             style="background-image: url({{asset('frontend/images/background/about-banner.jpg')}});">
+             style="background-image: url({{ env('APP_URL') . $about->background_image }});">
         <div class="container">
             <div class="content-box">
-                <h1>Industrial Company</h1>
-                <div class="text">For more than 30 years, companies around the world have<br/>depended on Intertek</div>
+                <h1>{{ $about->title }}</h1>
+            
             </div>
         </div>
     </section>
@@ -26,9 +26,7 @@
             <div class="inner-container">
                 <div class="title-box">
                     <div class="top-text">About The Company</div>
-                    <h1>Bringing transformational change to a stagnant industry</h1>
-                    <h3>We are proud to welcome you to our new Global International Sewing Machines ebsite. We have
-                        decided to categorize our machine models into various industries</h3>
+                    <h3>{{ $about->short_description }}</h3>
                 </div>
                 <div class="upper-content">
                     <div class="row">
@@ -39,10 +37,7 @@
                             <div class="content-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                                 <div class="icon-box"><i class="flaticon-script"></i></div>
                                 <h3 class="group-title">Our Story</h3>
-                                <p>Since over 36 years we produce machines and plants with dedicated software, robotic
-                                    automation The iconic Building 680 is the famous Mare Island Naval Shipyard machine
-                                    shop where determined Americans rebuilt the Pacific Fleet after the attack on Pearl
-                                    Harbor</p>
+                                <p>{{ $about->our_story }}</p>
                             </div>
                         </div>
                     </div>
@@ -52,23 +47,15 @@
                         <div class="col-lg-5 col-md-12 col-sm-12 left-column">
                             <div class="content-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                                 <div class="icon-box"><i class="flaticon-action"></i></div>
-                                <h3 class="group-title">Vision</h3>
-                                <p>Our homes are Union Made. We are committed to progressive labor practices and built
-                                    on a strong relationship with the Northern California Carpenters Regional Council We
-                                    have a unique agreement with the union to recruit and train local workers</p>
+                                <h3 class="group-title">Our Vision</h3>
+                                <p>{{ $about->our_vision }}</p>
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-12 col-sm-12 right-column">
                             <div class="content-box">
-                                <h3 class="group-title">Core Valu</h3>
+                                <h3 class="group-title">Our Aim</h3>
                                 <div class="text">
-                                    <p>ince over 36 years we produce machines and plants with dedicated software,
-                                        robotic automation The iconic Building 680 is the famous Mare Island Naval
-                                        Shipyard machine shop where determined Americans rebuilt the Pacific Fleet </p>
-                                    <p>Acto is an industry leader with more than 44,000 employees in 1,000 locations in
-                                        over 100 countries We deliver Total Quality Assurance expertise 24 hours a day,
-                                        7 days a week with our industry-winning processes and customer-centric
-                                        culture.</p>
+                                    <p>{{ $about->our_aim }}</p>
                                 </div>
                             </div>
                         </div>
@@ -130,38 +117,6 @@
     <!-- counter-style-two end -->
 
 
-    <!-- statistics-section -->
-    <section class="statistics-section" style="background-image: url(images/background/statistics-bg.jpg);">
-        <div class="container">
-            <div>
-                <div class="row">
-                    <div class="col-xl-7 col-lg-12 col-md-12 offset-xl-5 inner-column">
-                        <div class="inner-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <div class="video-box"><a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s"
-                                                      class="lightbox-image" data-caption=""><i class="fas fa-play"></i></a>
-                            </div>
-                            <div class="top-box">
-                                <h2>Statistics</h2>
-                                <div class="text">Global energy statistics at your fingertips. Explore the most reliable
-                                    and in-depth energy data available in the world.
-                                </div>
-                                <h4>Energy sector was valued at $150<br/>billion in 2019</h4>
-                                <a href="#">Explore</a>
-                            </div>
-                            <div class="lower-box">
-                                <h2>The safe choice for your supply needs Energy & Power</h2>
-                                <div class="text">Analyze overall plant capacity by planning for incoming supply and
-                                    market demand
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- statistics-section end -->
-
 
     <!-- team-style-two -->
     <section class="team-style-two about-page">
@@ -174,7 +129,7 @@
             <div class="four-item-carousel owl-carousel owl-theme">
                 <div class="team-block-two">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="#"><img src="images/resource/team-4.jpg" alt=""></a></figure>
+                        <figure class="image-box"><a href="#"><img src="{{ asset('frontend/images/resource/team-4.jpg') }}" alt=""></a></figure>
                         <div class="lower-content">
                             <h4><a href="#">Park bo young</a></h4>
                             <span class="designation">Senior Enginer</span>
@@ -183,7 +138,7 @@
                 </div>
                 <div class="team-block-two">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="#"><img src="images/resource/team-5.jpg" alt=""></a></figure>
+                        <figure class="image-box"><a href="#"><img src="{{ asset('frontend/images/resource/team-5.jpg')}}" alt=""></a></figure>
                         <div class="lower-content">
                             <h4><a href="#">Chan wook</a></h4>
                             <span class="designation">Senior Factory Manager</span>
@@ -192,7 +147,7 @@
                 </div>
                 <div class="team-block-two">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="#"><img src="images/resource/team-6.jpg" alt=""></a></figure>
+                        <figure class="image-box"><a href="#"><img src="{{ asset('frontend/images/resource/team-6.jpg')}}" alt=""></a></figure>
                         <div class="lower-content">
                             <h4><a href="#">Mahfuz Riad</a></h4>
                             <span class="designation">Senior LOTT</span>
@@ -201,7 +156,7 @@
                 </div>
                 <div class="team-block-two">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="#"><img src="images/resource/team-7.jpg" alt=""></a></figure>
+                        <figure class="image-box"><a href="#"><img src="{{ asset('frontend/images/resource/team-7.jpg')}}" alt=""></a></figure>
                         <div class="lower-content">
                             <h4><a href="#">Jhon Rook</a></h4>
                             <span class="designation">Junior Enginer</span>

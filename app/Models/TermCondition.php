@@ -11,7 +11,13 @@ class TermCondition extends Model
 
     protected $table = 'term_conditions';
 
-    protected $fillable = ['title','description'];
+    protected $fillable = ['title','description','image'];
+
+
+    public function getImageAttribute($value)
+    {
+        return $value ? '/images/term/'.$value : null;
+    }
 
 
     /**

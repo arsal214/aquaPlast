@@ -25,72 +25,23 @@
                 <p>Our experienced staff, combined with our global network, allow us to<br />provide the support you need</p>
             </div>
             <div class="row">
+
+                  @foreach ($teams as $team)
+                      
+                  
                 <div class="col-lg-4 col-md-6 col-sm-12 team-block">
                     <div class="team-block-two">
                         <div class="inner-box">
-                            <figure class="image-box"><a href="#"><img src="images/resource/team-14.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="#"><img src="{{ env('APP_URL') . $team->image }}" alt=""></a></figure>
                             <div class="lower-content">
-                                <h4><a href="#">Park bo young</a></h4>
-                                <span class="designation">Senior Enginer</span>
+                                <h4><a href="#">{{ $team->name }}</a></h4>
+                                <span class="designation">{{ $team->designation }}</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 team-block">
-                    <div class="team-block-two">
-                        <div class="inner-box">
-                            <figure class="image-box"><a href="#"><img src="images/resource/team-15.jpg" alt=""></a></figure>
-                            <div class="lower-content">
-                                <h4><a href="#">Chan wook</a></h4>
-                                <span class="designation">Senior Factory Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 team-block">
-                    <div class="team-block-two">
-                        <div class="inner-box">
-                            <figure class="image-box"><a href="#"><img src="images/resource/team-16.jpg" alt=""></a></figure>
-                            <div class="lower-content">
-                                <h4><a href="#">Mahfuz Riad</a></h4>
-                                <span class="designation">Senior LOTT</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 team-block">
-                    <div class="team-block-two">
-                        <div class="inner-box">
-                            <figure class="image-box"><a href="#"><img src="images/resource/team-17.jpg" alt=""></a></figure>
-                            <div class="lower-content">
-                                <h4><a href="#">Emran Khan</a></h4>
-                                <span class="designation">Senior Enginer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 team-block">
-                    <div class="team-block-two">
-                        <div class="inner-box">
-                            <figure class="image-box"><a href="#"><img src="images/resource/team-18.jpg" alt=""></a></figure>
-                            <div class="lower-content">
-                                <h4><a href="#">Masum Rana</a></h4>
-                                <span class="designation">Senior LOTT</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 team-block">
-                    <div class="team-block-two">
-                        <div class="inner-box">
-                            <figure class="image-box"><a href="#"><img src="images/resource/team-19.jpg" alt=""></a></figure>
-                            <div class="lower-content">
-                                <h4><a href="#">Park bo young</a></h4>
-                                <span class="designation">Senior Enginer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
         </div>
     </section>

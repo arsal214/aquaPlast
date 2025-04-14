@@ -139,8 +139,8 @@ class ProductRepository implements ProductRepositoryInterface
     {
         $products = Product::with(['images', 'faqs','category'])
             ->where('status', 'Active')
-            ->where('is_popular', 'Active')
-            ->get();
+            ->where('is_popular', 'Active')->latest()
+            ->limit(8)->get();
         return $products;
     }
 

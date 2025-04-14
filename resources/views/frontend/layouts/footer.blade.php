@@ -15,12 +15,12 @@
                             <h4 class="widget-title">Company</h4>
                             <div class="widget-content">
                                 <ul>
-                                    <li><a href="team.html">Team</a></li>
-                                    <li><a href="#">Site Map</a></li>
-                                    <li><a href="#">Accessibility</a></li>
+                                    <li><a href="{{ url('/team') }}">Team</a></li>
+                                    <li><a href="{{  url('/term-conditions') }}">Term & Conditions</a></li>
+                                    <li><a href="{{ url('privacy-policy') }}">Privacy Policy</a></li>
                                     <li><a href="#">Company</a></li>
                                     <li><a href="about.html">About</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{ url('contact') }}">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -29,12 +29,15 @@
                         <div class="links-widget footer-widget">
                             <h4 class="widget-title">Products</h4>
                             <div class="widget-content">
+                                <?php
+                                use App\Models\Product;
+
+                                $products = Product::latest()->limit(5)->get();
+                                ?>
                                 <ul>
-                                    <li><a href="#">Project logistics</a></li>
-                                    <li><a href="#">Sea Freight</a></li>
-                                    <li><a href="#">Airfreight</a></li>
-                                    <li><a href="#">Land transport</a></li>
-                                    <li><a href="#">Logistics</a></li>
+                                   @foreach ($products as $product)
+                                       <li> <a href="{{route('productShow', $product->id)}}"> {{ $product->name }} </a></li>
+                                   @endforeach
                                 </ul>
                             </div>
                         </div>

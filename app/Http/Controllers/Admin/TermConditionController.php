@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\Controller;
 use App\Repositories\TermConditionRepository;
+use App\Traits\UploadTrait;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -12,6 +13,7 @@ use Yajra\DataTables\Facades\DataTables;
 
 class TermConditionController extends BaseController
 {
+    use UploadTrait;
     public function __construct(
         private TermConditionRepository $termConditionRepository,
     ) {
@@ -63,10 +65,12 @@ class TermConditionController extends BaseController
         try {
             $request->validate([
                 'title' => 'required',
+                'image' => 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
                 'description' => 'required',
             ]);
 
-            $data = $request->all();
+            $data = $request->except('image');
+            $data['image'] = $request->hasFile('image') ? $this->uploadFile($request->file('image'), 'term') : 'https://png.pngtree.com/element_our/20200610/ourmid/pngtree-character-default-avatar-image_2237203.jpg';
             $this->termConditionRepository->storeOrUpdate($data);
         } catch (\Throwable $th) {
             return redirect()->back()->withErrors(['msg' => $th->getMessage()]);
@@ -95,7 +99,10 @@ class TermConditionController extends BaseController
                 'description' => 'required',
             ]);
 
-            $data = $request->all();
+            $data = $request->except('image');
+            if ($request->hasFile('image')) {
+                $data['image'] = $this->uploadFile($request->file('image'), 'privacy');
+            }
 
             $this->termConditionRepository->storeOrUpdate($data, $id);
         } catch (\Throwable $th) {

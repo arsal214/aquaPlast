@@ -101,8 +101,11 @@
                             <x-nav-item route="pages.term-conditions.index" active="pages.term-conditions.*"
                                         title="Term Conditions"/>
 
-                            <x-nav-item route="pages.privacy-policy.index" active="pages.privacy-policy.*"
-                                        title="Privacy Policy"/>
+                                        <x-nav-item route="pages.teams.index" active="pages.teams.*"
+                                        title="Teams"/>
+
+                             <x-nav-item route="pages.privacy-policy.index" active="pages.privacy-policy.*"
+                                        title="Privacy Policy"/> 
 
                     </x-nav-item>
 

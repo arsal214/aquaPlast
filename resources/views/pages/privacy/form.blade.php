@@ -11,6 +11,12 @@
         </div>
     </div>
 
+    <div class="col-md-4">
+        <div class="row">
+            <x-input name="image" type="dropify" :defaultFile="$term->image ?? null" dropifyHeight="202" />
+        </div>
+    </div>
+
 </div>
 
 @push('scripts')

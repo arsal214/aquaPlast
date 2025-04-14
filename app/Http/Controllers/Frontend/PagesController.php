@@ -3,11 +3,15 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Interfaces\AboutRepositoryInterface;
 use App\Interfaces\BlogRepositoryInterface;
 use App\Interfaces\HomepageRepositoryInterface;
 use App\Interfaces\ProductCategoryRepositoryInterface;
 use App\Interfaces\ProductRepositoryInterface;
+use App\Interfaces\TeamRepositoryInterface;
+use App\Models\PrivacyPolicy;
 use App\Models\Product;
+use App\Models\TermCondition;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -18,6 +22,8 @@ class PagesController extends Controller
         private HomepageRepositoryInterface       $homepageRepository,
         private ProductCategoryRepositoryInterface $productCategoryRepository,
         private BlogRepositoryInterface $blogRepository,
+        private AboutRepositoryInterface $aboutRepository,
+        private TeamRepositoryInterface $teamRepository,
     )
     {
 
@@ -34,7 +40,8 @@ class PagesController extends Controller
 
     public function about()
     {
-        return view('frontend.about');
+        $about = $this->aboutRepository->detail();
+        return view('frontend.about',compact('about'));
     }
 
     public function products()
@@ -62,7 +69,21 @@ class PagesController extends Controller
 
     public function team()
     {
-        return view('frontend.team');
+        $teams = $this->teamRepository->activeList();
+        return view('frontend.team',compact('teams'));
+    }
+
+
+    public function termConditions()
+    {
+       $termConditions = TermCondition::first();
+        return view('frontend.term-conditions',compact('termConditions'));
+    }
+
+    public function privacyPolicy()
+    {
+       $privacyPolicy = PrivacyPolicy::first();
+        return view('frontend.privacy-policy',compact('privacyPolicy'));
     }
 
     public function blog()

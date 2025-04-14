@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('privacy_policy', function (Blueprint $table) {
+        Schema::create('teams', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable();
+            $table->text('name')->nullable();
+            $table->text('designation')->nullable();
             $table->string('image')->nullable();
-            $table->longText('description')->nullable();
+            $table->enum('status',['Active','DeActive'])->nullable();
             $table->timestamps();
         });
     }
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('privacy_policy');
+        Schema::dropIfExists('teams');
     }
 };

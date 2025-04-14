@@ -10,7 +10,7 @@ class About extends Model
     use HasFactory;
 
 
-    protected $fillable = ['title','short_description','for_captains','for_supplier','for_captain_video','for_supplier_video','our_aim','background_image'];
+    protected $fillable = ['title','short_description','our_story','our_vision','our_aim','background_image'];
 
     /**
      * The attributes that should be hidden for serialization.

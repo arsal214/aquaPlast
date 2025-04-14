@@ -16,10 +16,8 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->string('short_description')->nullable();
             $table->string('background_image')->nullable();
-            $table->text('for_captains')->nullable();
-            $table->text('for_supplier')->nullable();
-            $table->string('for_captain_video')->nullable();
-            $table->string('for_supplier_video')->nullable();
+            $table->text('our_story')->nullable();
+            $table->text('our_vision')->nullable();
             $table->text('our_aim')->nullable();
             $table->timestamps();
         });

@@ -35,6 +35,10 @@ Route::get('/blogShow/{id}', [PagesController::class, 'blogShow'])->name('blogSh
 
 Route::get('/contact', [PagesController::class, 'contact']);
 
+Route::get('/term-conditions', [PagesController::class, 'termConditions']);
+
+Route::get('/privacy-policy', [PagesController::class, 'privacyPolicy']);
+
 
 
 Route::redirect('login', 'login');
