@@ -115,10 +115,8 @@ class ProductRepository implements ProductRepositoryInterface
      */
     public function limitServices()
     {
-        $services = Product::with(['images', 'faqs', 'tags', 'supplier.user', 'wishlists', 'category', 'subCategory', 'reviews'])
-            ->where('status', 'Active')
-            ->withCount('reviews')
-            ->withAvg('reviews', 'stars')->limit(8)->get();
+        $services = Product::with(['images', 'faqs','category'])
+            ->where('status', 'Active')->limit(8)->get();
         return $services;
     }
 

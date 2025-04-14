@@ -32,8 +32,7 @@ class PagesController extends Controller
     public function index()
     {
         $sliders = $this->homepageRepository->list();
-        $products = $this->productRepository->activeList();
-        $fProducts = $this->productRepository->featuresServices();
+        $products = $this->productRepository->featuresServices();
         $category = $this->productCategoryRepository->parentCategory();
         return view('frontend.index',compact('products','category','fProducts','sliders'));
     }
