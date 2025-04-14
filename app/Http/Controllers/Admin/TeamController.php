@@ -18,10 +18,10 @@ class TeamController extends BaseController
     public function __construct(
         private TeamRepositoryInterface $teamRepository,
     ) {
-        $this->middleware('permission:teams-list', ['only' => ['index', 'show']]);
-        $this->middleware('permission:teams-create', ['only' => ['store']]);
-        $this->middleware('permission:teams-edit', ['only' => ['edit', 'update','change']]);
-        $this->middleware('permission:teams-delete', ['only' => ['destroy']]);
+        // $this->middleware('permission:teams-list', ['only' => ['index', 'show']]);
+        // $this->middleware('permission:teams-create', ['only' => ['store']]);
+        // $this->middleware('permission:teams-edit', ['only' => ['edit', 'update','change']]);
+        // $this->middleware('permission:teams-delete', ['only' => ['destroy']]);
     }
 
     /**
