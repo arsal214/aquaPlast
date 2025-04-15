@@ -390,7 +390,7 @@ Aqua Plast | Home
                     <div class="right-content">
                         <div class="inner-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <div class="video-box"><a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="fas fa-play"></i></a></div>
-                            <h2 class="phone"><a href="tel:+8801912704287">+88 01912704287</a></h2>
+                            <h2 class="phone"><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></h2>
                             <div class="text">Make Quick Call for any Kinds of<br />Industries Question</div>
                             <h3>Sign up for updates</h3>
                             <form action="#" method="post" class="subscribe-form">

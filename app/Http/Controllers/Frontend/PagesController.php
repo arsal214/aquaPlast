@@ -35,7 +35,8 @@ class PagesController extends Controller
         $sliders = $this->homepageRepository->list();
         $products = $this->productRepository->featuresServices();
         $category = $this->productCategoryRepository->parentCategory();
-        return view('frontend.index',compact('products','category','sliders'));
+        $contact = ContactUs::first();
+        return view('frontend.index',compact('products','category','sliders','contact'));
     }
 
     public function about()
