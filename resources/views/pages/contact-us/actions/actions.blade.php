@@ -1,7 +1,5 @@
 
-@canany(['aboutUs-edit','aboutUs-delete'])
 <x-actions
-    :editRoute="route('pages.about-us.edit', $row->id)"  canEdit="aboutUs-edit"
+    :editRoute="route('pages.contact-us.edit', $row->id)" 
 
 />
-@endcanany
