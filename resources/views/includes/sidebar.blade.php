@@ -107,6 +107,10 @@
                              <x-nav-item route="pages.privacy-policy.index" active="pages.privacy-policy.*"
                                         title="Privacy Policy"/> 
 
+                         <x-nav-item route="pages.contact-us.index" active="pages.contact-us.*"
+                                        title="Contact Us"/> 
+                                         
+
                     </x-nav-item>
 
                 @endcanany

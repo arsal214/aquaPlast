@@ -17,7 +17,6 @@
                             <div class="content-box">
                                 <h1>water jet pumps<br />bare pumps</h1>
                                 <div class="text">This Center Lathe Machine supplied by us is highly used for the<br />purpose of producing concentric work. This product is a highly<br />demanded product in the</div>
-                                <div class="btn-box"><a href="product-show.blade.php">Add To Cart</a></div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-12 col-sm-12 image-column">
@@ -165,7 +164,9 @@
                                     </div>
                                 </div>
                                 @endforeach
-
+                                <div class="col-12 d-flex justify-content-center mt-4">
+                                    {{ $products->links('pagination::bootstrap-4') }}
+                                </div>
 
 
                             </div>
@@ -186,9 +187,9 @@
                     <div class="inner-box">
                         <div class="box">
                             <div class="inner">
-                                <div class="icon-box"><i class="fas fa-truck"></i></div>
-                                <h4>Free Shipping</h4>
-                                <div class="text">Orders over $500.00</div>
+                                <div class="icon-box"><i class="fas fa-thumbs-up"></i></div>
+                                <h4>Most reliable & durable</h4>
+                                {{-- <div class="text">Orders over $500.00</div> --}}
                             </div>
                         </div>
                     </div>
@@ -199,7 +200,7 @@
                             <div class="inner">
                                 <div class="icon-box"><i class="far fa-thumbs-up"></i></div>
                                 <h4>100% Made In US</h4>
-                                <div class="text">Respecting natur</div>
+                                {{-- <div class="text">Respecting natur</div> --}}
                             </div>
                         </div>
                     </div>
@@ -210,7 +211,7 @@
                             <div class="inner">
                                 <div class="icon-box"><i class="fas fa-lock"></i></div>
                                 <h4>Safety And Quality</h4>
-                                <div class="text">Delivery within 3-4<br />business days</div>
+                                {{-- <div class="text">Delivery within 3-4<br />business days</div> --}}
                             </div>
                         </div>
                     </div>

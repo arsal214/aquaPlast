@@ -9,8 +9,8 @@
 
 
             <x-input col="6" name="status" type="select" :required="true">
-                <option value="Active" @selected(isset($blog->status) && $blog->status == 'Active')>Active</option>
-                <option value="DeActive" @selected(isset($blog->status) && $blog->status == 'DeActive')>InActive</option>
+                <option value="Active" @selected(isset($team->status) && $team->status == 'Active')>Active</option>
+                <option value="DeActive" @selected(isset($team->status) && $team->status == 'DeActive')>InActive</option>
             </x-input>
 
         

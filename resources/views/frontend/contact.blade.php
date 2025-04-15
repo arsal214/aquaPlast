@@ -6,7 +6,7 @@
 
 @section('content')
     <!-- contact-banner -->
-    <section class="contact-banner centred" style="background-image: url(images/background/page-title-10.jpg);">
+    <section class="contact-banner centred" style="background-image: url({{ env('APP_URL') . $contact->background_image }});">
         <div class="container">
             <div class="content-box">
                 <h1>Contact Us</h1>
@@ -25,7 +25,7 @@
                     <div class="single-info-box">
                         <div class="icon-box"><i class="flaticon-location"></i></div>
                         <h3>Location</h3>
-                        <div class="text">121 King Street, Melbourne Victoria 3000 Australia</div>
+                        <div class="text">{{ $contact->location }}</div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 info-column">
@@ -33,18 +33,16 @@
                         <div class="icon-box"><i class="flaticon-telephone"></i></div>
                         <h3>Call us on</h3>
                         <div class="text">
-                            <a href="tel:8801912704287">+88 01912704287</a><br />
-                            <a href="tel:029292162">029292162</a>
+                            <a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a><br />
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 info-column">
                     <div class="single-info-box">
                         <div class="icon-box"><i class="flaticon-envelope"></i></div>
-                        <h3>Location</h3>
+                        <h3>Email</h3>
                         <div class="text">
-                            <a href="mailto:info@example.com">info@example.com</a>
-                            <a href="mailto:support@example.com">support@example.com</a>
+                            <a href="mailto:{{ $contact->email }}">{{ $contact->email }}</a>
                         </div>
                     </div>
                 </div>

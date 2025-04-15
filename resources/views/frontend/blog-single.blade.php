@@ -6,11 +6,7 @@
 
 @section('content')
 <section class="page-title blog-page" style="background-image:url({{ env('APP_URL') . $blog->image }})">
-    <div class="container">
-        <div class="content-box">
-            <h1>{{ $blog->title }}</h1>
-        </div>
-    </div>
+    
 </section>
 
 
@@ -21,7 +17,11 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 content-side">
                     <div class="blog-single-content">
 
-
+                        <div class="container">
+                            <div class="content-box">
+                                <h1>{{ $blog->title }}</h1>
+                            </div>
+                        </div>
                         {!! $blog->body !!}
 
                         <div class="comments-form-area">

@@ -21,6 +21,8 @@ interface ProductRepositoryInterface
 
     public function activeList();
 
+    public function activeListPaginate();
+
     public function storeOrUpdate(array $data, $id = null);
 
     public function findById($id);

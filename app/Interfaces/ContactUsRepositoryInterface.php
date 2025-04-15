@@ -4,7 +4,7 @@ namespace App\Interfaces;
 
 interface ContactUsRepositoryInterface
 {
-    public function list($id);
+    public function list();
 
     public function storeOrUpdate(array $data, $id = null);
 

@@ -11,6 +11,22 @@ class ContactUs extends Model
 
 
     protected $table = 'contact_us';
-    protected $fillable = ['first_name','last_name','email','phone','message','user_type','user_id','subject'];
+    protected $fillable = ['title', 'background_image', 'email', 'phone', 'location'];
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var array<int, string>
+     */
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+        'deleted_at',
+    ];
 
+
+
+    public function getBackgroundImageAttribute($value)
+    {
+        return $value ? '/images/contactUs/' . $value : null;
+    }
 }

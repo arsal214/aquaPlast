@@ -96,9 +96,10 @@
             <div class="latest-product">
                 <h2 class="product-price pb-3" style="text-align: center;">Related Product</h2>
                 <div class="row">
+                    @foreach($relatedProducts as $pro)
                     <div class="col-lg-3 col-md-4 col-sm-12 shop-block">
                         <div class="shop-block-two">
-                            @foreach($relatedProducts as $pro)
+                            
                             <div class="inner-box">
                                 <div class="image-holder">
                                     <figure class="image-box"><img src="{{$pro?->images[0]?->image}}" alt=""></figure>
@@ -111,10 +112,11 @@
                                     <div class="btn-box"><a href="{{route('productShow', $pro->id)}}">See Detail</a></div>
                                 </div>
                             </div>
-                            @endforeach
+                            
 
                         </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -131,8 +133,8 @@
                         <div class="box">
                             <div class="inner">
                                 <div class="icon-box"><i class="fas fa-truck"></i></div>
-                                <h4>Free Shipping</h4>
-                                <div class="text">Orders over $500.00</div>
+                                <h4>Most reliable & durable</h4>
+                                {{-- <div class="text">Orders over $500.00</div> --}}
                             </div>
                         </div>
                     </div>
@@ -142,8 +144,8 @@
                         <div class="box">
                             <div class="inner">
                                 <div class="icon-box"><i class="far fa-thumbs-up"></i></div>
-                                <h4>100% Made In US</h4>
-                                <div class="text">Respecting natur</div>
+                                <h4>100% Made In Pakistan</h4>
+                                {{-- <div class="text">Respecting natur</div> --}}
                             </div>
                         </div>
                     </div>
@@ -154,7 +156,7 @@
                             <div class="inner">
                                 <div class="icon-box"><i class="fas fa-lock"></i></div>
                                 <h4>Safety And Quality</h4>
-                                <div class="text">Delivery within 3-4<br />business days</div>
+                                {{-- <div class="text">Delivery within 3-4<br />business days</div> --}}
                             </div>
                         </div>
                     </div>

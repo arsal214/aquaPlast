@@ -9,6 +9,7 @@ use App\Interfaces\HomepageRepositoryInterface;
 use App\Interfaces\ProductCategoryRepositoryInterface;
 use App\Interfaces\ProductRepositoryInterface;
 use App\Interfaces\TeamRepositoryInterface;
+use App\Models\ContactUs;
 use App\Models\PrivacyPolicy;
 use App\Models\Product;
 use App\Models\TermCondition;
@@ -46,7 +47,7 @@ class PagesController extends Controller
     public function products()
     {
 
-        $products = $this->productRepository->activeList();
+        $products = $this->productRepository->activeListPaginate();
         $trendProducts = $this->productRepository->trendServices();
         $category = $this->productCategoryRepository->parentCategory();
         return view('frontend.shop', compact('products', 'trendProducts', 'category'));
@@ -101,7 +102,8 @@ class PagesController extends Controller
 
     public function contact()
     {
-        return view('frontend.contact');
+        $contact = ContactUs::first();
+        return view('frontend.contact',compact('contact'));
     }
 
 

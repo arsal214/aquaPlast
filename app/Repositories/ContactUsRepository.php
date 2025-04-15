@@ -13,7 +13,7 @@ class ContactUsRepository implements ContactUsRepositoryInterface
     /**
      * All  category list.
      */
-    public function list($id): Collection
+    public function list(): Collection
     {
         return ContactUs::all();
     }

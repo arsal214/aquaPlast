@@ -34,6 +34,19 @@ class ProductRepository implements ProductRepositoryInterface
 
     }
 
+
+     /**
+     * Active list.
+     */
+    public function activeListPaginate()
+    {
+            return Product::with(['images', 'faqs','category'])
+                ->where('status', 'Active')
+                ->paginate(6);
+
+
+    }
+
     /**
      * Active list.
      */

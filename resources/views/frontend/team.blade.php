@@ -20,10 +20,6 @@
     <!-- team-style-two -->
     <section class="team-style-two team-page">
         <div class="container">
-            <div class="sec-title">
-                <h1>Expertise Team</h1>
-                <p>Our experienced staff, combined with our global network, allow us to<br />provide the support you need</p>
-            </div>
             <div class="row">
 
                   @foreach ($teams as $team)

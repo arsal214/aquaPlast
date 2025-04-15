@@ -23,6 +23,7 @@ use App\Http\Controllers\Admin\PrivacyPolicyController;
 use App\Http\Controllers\Admin\BriefController;
 use App\Http\Controllers\Admin\TermConditionController;
 use App\Http\Controllers\Admin\TeamController;
+use App\Http\Controllers\Admin\ContactUsController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -117,6 +118,7 @@ Route::prefix('pages')->as('pages.')->group(function () {
 
 
     /* -------------------------  About Routes ------------------------ */
+    Route::patch('teams/change/{id}', 'TeamController@change')->name('teams.change');
     Route::get('teams/list', 'TeamController@list')->name('teams.list');
     Route::resource('teams', TeamController::class);
 
@@ -129,6 +131,12 @@ Route::prefix('pages')->as('pages.')->group(function () {
     /* -------------------------  FAQ Routes ------------------------ */
     Route::get('term-conditions/list', 'TermConditionController@list')->name('term-conditions.list');
     Route::resource('term-conditions', TermConditionController::class);
+
+    /* -------------------------  Contact Routes ------------------------ */
+    Route::get('contact-us/list', 'ContactUsController@list')->name('contact-us.list');
+    Route::resource('contact-us', ContactUsController::class);
+
+
 
 
 
