@@ -10,7 +10,7 @@
     <!-- Stylesheets -->
     <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
     <link href=" {{asset('frontend/css/responsive.css')}}" rel="stylesheet">
-    <link rel="icon" href=" {{ asset('images/settings/'.adminSettings('admin_app_favicon')) }} " type="image/x-icon">
+    <link rel="icon" href="{{asset('images/settings/'.adminSettings('admin_app_favicon'))}}" type="image/x-icon">
 
 </head>
 

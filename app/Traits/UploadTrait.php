@@ -9,7 +9,7 @@ trait UploadTrait
     public function uploadFile($file, $path)
     {
 
-        $filename = date('YmdHi') . '_' . uniqid() . '.' . $file->getClientOriginalExtension();
+        $filename = date('YmdHi') . '.' . $file->getClientOriginalExtension();
         $file->move(public_path('images/'.$path), $filename);
         return $filename;
     }
