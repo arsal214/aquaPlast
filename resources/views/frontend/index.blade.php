@@ -198,7 +198,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 inner-column">
                     <div class="inner-content wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <figure class="image-box"><img src="images/resource/weare-1.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="frontend/images/resource/weare-1.jpg" alt=""></figure>
                         <div class="inner-box">
                             <div class="link-btn"><a href="#"><i class="flaticon-slim-right"></i></a></div>
                             <div class="text-content">
@@ -291,7 +291,7 @@
                         <div class="text">"Compared to other design software, Acto has a more intuitive and stable
                             environment."</div>
                         <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-1.png" alt="">
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-1.png" alt="">
                             </figure>
                             <h5>Tamim Anj</h5>
                             <span class="designation">Systems Engineer</span>
@@ -303,7 +303,7 @@
                         <div class="text">"Compared to other design software, Acto has a more intuitive and stable
                             environment."</div>
                         <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-2.png" alt="">
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-2.png" alt="">
                             </figure>
                             <h5>Mahfuz Riad</h5>
                             <span class="designation">Engineering and Technology</span>
