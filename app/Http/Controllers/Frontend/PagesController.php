@@ -36,7 +36,8 @@ class PagesController extends Controller
         $products = $this->productRepository->featuresServices();
         $category = $this->productCategoryRepository->parentCategory();
         $contact = ContactUs::first();
-        return view('frontend.index',compact('products','category','sliders','contact'));
+        $teams = $this->teamRepository->activeList();
+        return view('frontend.index',compact('products','category','sliders','contact','teams'));
     }
 
     public function about()
