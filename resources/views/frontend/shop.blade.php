@@ -21,7 +21,7 @@
                         </div>
                         <div class="col-lg-5 col-md-12 col-sm-12 image-column">
                             <div class="image-box">
-                                <figure class="image clearfix"><img src="images/resource/machine-2.png" alt=""></figure>
+                                <figure class="image clearfix"><img src="frontend/images/resource/machine-2.png" alt=""></figure>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         </div>
                         <div class="col-lg-5 col-md-12 col-sm-12 image-column">
                             <div class="image-box">
-                                <figure class="image clearfix"><img src="images/resource/machine-2.png" alt=""></figure>
+                                <figure class="image clearfix"><img src="frontend/images/resource/machine-2.png" alt=""></figure>
                             </div>
                         </div>
                     </div>
