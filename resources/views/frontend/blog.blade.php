@@ -9,7 +9,7 @@
 
 
     <!-- page-title-two -->
-    <section class="page-title blog-page" style="background-image: url(images/background/page-title-9.jpg);">
+    <section class="page-title blog-page" style="background-image: url(frontend/images/background/page-title-9.jpg);">
         <div class="container">
             <div class="content-box">
                 <h1>Our Latest Blogs</h1>

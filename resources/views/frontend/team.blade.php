@@ -6,7 +6,7 @@
 
 @section('content')
     <!-- page-title -->
-    <section class="page-title centred" style="background-image: url(images/background/page-title.jpg);">
+    <section class="page-title centred" style="background-image: url(frontend/images/background/page-title.jpg);">
         <div class="container">
             <div class="content-box">
                 <h1>Our Staff</h1>

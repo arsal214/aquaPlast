@@ -10,7 +10,7 @@
     <!-- shop-banner -->
     <section class="shop-banner">
         <div class="main-slider-carousel owl-carousel owl-theme">
-            <div class="slide" style="background-image:url(images/main-slider/slider-10.jpg)">
+            <div class="slide" style="background-image:url(frontend/images/main-slider/slider-10.jpg)">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7 col-md-12 col-sm-12 content-column">
@@ -27,25 +27,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image:url(images/main-slider/slider-10.jpg)">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7 col-md-12 col-sm-12 content-column">
-                            <div class="content-box">
-                                <h1>water jet pumps<br />bare pumps</h1>
-                                <div class="text">This Center Lathe Machine supplied by us is highly used for the<br />purpose of producing concentric work. This product is a highly<br />demanded product in the</div>
-                                <div class="btn-box"><a href="product-show.blade.php">Add To Cart</a></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-12 col-sm-12 image-column">
-                            <div class="image-box">
-                                <figure class="image clearfix"><img src="images/resource/machine-2.png" alt=""></figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide" style="background-image:url(images/main-slider/slider-10.jpg)">
+            <div class="slide" style="background-image:url(frontend/images/main-slider/slider-10.jpg)">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7 col-md-12 col-sm-12 content-column">
@@ -63,24 +45,8 @@
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image:url(images/main-slider/slider-10.jpg)">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7 col-md-12 col-sm-12 content-column">
-                            <div class="content-box">
-                                <h1>water jet pumps<br />bare pumps</h1>
-                                <div class="text">This Center Lathe Machine supplied by us is highly used for the<br />purpose of producing concentric work. This product is a highly<br />demanded product in the</div>
-                                <div class="btn-box"><a href="product-show.blade.php">Add To Cart</a></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-12 col-sm-12 image-column">
-                            <div class="image-box">
-                                <figure class="image clearfix"><img src="images/resource/machine-2.png" alt=""></figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+        
         </div>
     </section>
     <!-- shop-banner end -->

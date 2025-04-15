@@ -31,7 +31,7 @@
                 <div class="upper-content">
                     <div class="row">
                         <div class="col-lg-8 col-md-12 col-sm-12 image-column">
-                            <figure class="image-box"><img src="images/resource/about-4.jpg" alt=""></figure>
+                            <figure class="image-box"><img src="frontend/images/resource/about-4.jpg" alt=""></figure>
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12 content-column">
                             <div class="content-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
@@ -180,7 +180,7 @@
                 <div class="testimonial-content">
                     <div class="inner-box">
                         <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-3.png" alt=""></figure>
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-3.png" alt=""></figure>
                             <h5>Tamim Anj</h5>
                             <span class="designation">Febric Indusrtries CTO</span>
                         </div>
@@ -192,7 +192,7 @@
                 <div class="testimonial-content">
                     <div class="inner-box">
                         <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-4.png" alt=""></figure>
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-4.png" alt=""></figure>
                             <h5>Anjek Mac</h5>
                             <span class="designation">Ecology Engineer</span>
                         </div>
@@ -204,7 +204,7 @@
                 <div class="testimonial-content">
                     <div class="inner-box">
                         <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-5.png" alt=""></figure>
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-5.png" alt=""></figure>
                             <h5>Tom Cruse</h5>
                             <span class="designation">CEO</span>
                         </div>
@@ -331,7 +331,7 @@
     <section class="subscribe-section about-page bg-color-3">
         <div class="container">
             <div class="inner-box">
-                <figure class="icon-box"><img src="images/icons/paper-plane.png" alt=""></figure>
+                <figure class="icon-box"><img src="frontend/images/icons/paper-plane.png" alt=""></figure>
                 <div class="content-box">
                     <h2>Get Subscribed Now!</h2>
                     <div class="text">The latest agopa news, articles, and resources, sent straight to your<br/>inbox
