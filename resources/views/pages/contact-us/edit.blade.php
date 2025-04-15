@@ -11,7 +11,7 @@
                         <h5 class="mb-0">{{ __('Update') }} contact Us</h5>
                     </div>
                     <div class="card-body">
-                        <x-form :route="route('pages.contact-us.update', $about->id)">
+                        <x-form :route="route('pages.contact-us.update', $contact->id)">
                             {{ method_field('PATCH') }}
                             @include('pages.contact-us.form')
                         </x-form>
