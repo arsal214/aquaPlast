@@ -43,7 +43,8 @@ class PagesController extends Controller
     public function about()
     {
         $about = $this->aboutRepository->detail();
-        return view('frontend.about',compact('about'));
+        $teams = $this->teamRepository->activeList();
+        return view('frontend.about',compact('about','teams'));
     }
 
     public function products()

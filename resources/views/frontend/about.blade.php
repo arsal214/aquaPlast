@@ -127,42 +127,17 @@
                 </p>
             </div>
             <div class="four-item-carousel owl-carousel owl-theme">
+                @foreach ($teams as $team)
                 <div class="team-block-two">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="#"><img src="{{ asset('frontend/images/resource/team-4.jpg') }}" alt=""></a></figure>
+                        <figure class="image-box"><a href="#"><img src="{{ env('APP_URL') . $team->image }}" alt=""></a></figure>
                         <div class="lower-content">
-                            <h4><a href="#">Park bo young</a></h4>
-                            <span class="designation">Senior Enginer</span>
+                            <h4><a href="#">{{ $team->name }}</a></h4>
+                            <span class="designation">{{ $team->designation }}</span>
                         </div>
                     </div>
                 </div>
-                <div class="team-block-two">
-                    <div class="inner-box">
-                        <figure class="image-box"><a href="#"><img src="{{ asset('frontend/images/resource/team-5.jpg')}}" alt=""></a></figure>
-                        <div class="lower-content">
-                            <h4><a href="#">Chan wook</a></h4>
-                            <span class="designation">Senior Factory Manager</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-block-two">
-                    <div class="inner-box">
-                        <figure class="image-box"><a href="#"><img src="{{ asset('frontend/images/resource/team-6.jpg')}}" alt=""></a></figure>
-                        <div class="lower-content">
-                            <h4><a href="#">Mahfuz Riad</a></h4>
-                            <span class="designation">Senior LOTT</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-block-two">
-                    <div class="inner-box">
-                        <figure class="image-box"><a href="#"><img src="{{ asset('frontend/images/resource/team-7.jpg')}}" alt=""></a></figure>
-                        <div class="lower-content">
-                            <h4><a href="#">Jhon Rook</a></h4>
-                            <span class="designation">Junior Enginer</span>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -216,7 +191,7 @@
                 <div class="testimonial-content">
                     <div class="inner-box">
                         <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-3.png" alt=""></figure>
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-3.png" alt=""></figure>
                             <h5>Tamim Anj</h5>
                             <span class="designation">Febric Indusrtries CTO</span>
                         </div>
@@ -228,7 +203,7 @@
                 <div class="testimonial-content">
                     <div class="inner-box">
                         <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-4.png" alt=""></figure>
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-4.png" alt=""></figure>
                             <h5>Anjek Mac</h5>
                             <span class="designation">Ecology Engineer</span>
                         </div>
@@ -240,7 +215,7 @@
                 <div class="testimonial-content">
                     <div class="inner-box">
                         <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-5.png" alt=""></figure>
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-5.png" alt=""></figure>
                             <h5>Tom Cruse</h5>
                             <span class="designation">CEO</span>
                         </div>
@@ -252,69 +227,9 @@
                 <div class="testimonial-content">
                     <div class="inner-box">
                         <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-3.png" alt=""></figure>
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-3.png" alt=""></figure>
                             <h5>Tamim Anj</h5>
                             <span class="designation">Febric Indusrtries CTO</span>
-                        </div>
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-4.png" alt=""></figure>
-                            <h5>Anjek Mac</h5>
-                            <span class="designation">Ecology Engineer</span>
-                        </div>
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-5.png" alt=""></figure>
-                            <h5>Tom Cruse</h5>
-                            <span class="designation">CEO</span>
-                        </div>
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-3.png" alt=""></figure>
-                            <h5>Tamim Anj</h5>
-                            <span class="designation">Febric Indusrtries CTO</span>
-                        </div>
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-4.png" alt=""></figure>
-                            <h5>Anjek Mac</h5>
-                            <span class="designation">Ecology Engineer</span>
-                        </div>
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="images/resource/testimonial-5.png" alt=""></figure>
-                            <h5>Tom Cruse</h5>
-                            <span class="designation">CEO</span>
                         </div>
                         <div class="text">"Compared to other design software, Acto has a more intuitive and stable
                             environment."
