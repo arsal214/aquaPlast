@@ -12,7 +12,7 @@
                         <h5 class="mb-0">{{ __('Update') }} Team</h5>
                     </div>
                     <div class="card-body">
-                        <x-form :route="route('pages.blogs.update', $team->id)">
+                        <x-form :route="route('pages.teams.update', $team->id)">
                             {{ method_field('PATCH') }}
                             <input type="hidden" name="old_img" value="{{ $team->image ?? '' }}">
                             @include('pages.teams.form')

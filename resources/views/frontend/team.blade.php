@@ -7,12 +7,12 @@
 @section('content')
     <!-- page-title -->
     <section class="page-title centred" style="background-image: url(frontend/images/background/page-title.jpg);">
-        <div class="container">
+        {{-- <div class="container">
             <div class="content-box">
                 <h1>Our Staff</h1>
                 <h3>We have small resources but also big dreams and some<br />good ideas</h3>
             </div>
-        </div>
+        </div> --}}
     </section>
     <!-- page-title end -->
 

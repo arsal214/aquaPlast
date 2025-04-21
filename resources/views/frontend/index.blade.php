@@ -109,44 +109,44 @@
 
     <!-- oilgas-section -->
     <!-- <section class="oilgas-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-12 col-sm-12 content-column">
-                        <div class="content-box">
-                            <div class="top-box">
-                                <h2>Oil & Gas</h2>
-                                <p>Our mission is to be there for you and your order at all times. That’s the only way to ensure that our pumping and production systems can operate without downtime. With us, you’ll never face expensive contractual penalties</p>
-                            </div>
-                            <figure class="image-box"><img src="images/resource/oil-1.jpg" alt=""></figure>
-                            <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                <h3>The State of Connected Planning</h3>
-                                <div class="text">Global Congress on Petroleum Engineering and Natural Gas Recovery</div>
-                                <div class="btn-box"><a href="#">Read more</a></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 col-sm-12 content-column">
+                            <div class="content-box">
+                                <div class="top-box">
+                                    <h2>Oil & Gas</h2>
+                                    <p>Our mission is to be there for you and your order at all times. That’s the only way to ensure that our pumping and production systems can operate without downtime. With us, you’ll never face expensive contractual penalties</p>
+                                </div>
+                                <figure class="image-box"><img src="images/resource/oil-1.jpg" alt=""></figure>
+                                <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                    <h3>The State of Connected Planning</h3>
+                                    <div class="text">Global Congress on Petroleum Engineering and Natural Gas Recovery</div>
+                                    <div class="btn-box"><a href="#">Read more</a></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 inner-column">
-                        <div class="inner-box clearfix">
-                            <div class="single-item">
-                                <div class="icon-box"><i class="flaticon-idea"></i></div>
-                                <h2>65%</h2>
-                                <div class="text">Growth in turnover over last 2 years</div>
-                            </div>
-                            <div class="single-item">
-                                <div class="icon-box"><i class="flaticon-pollution"></i></div>
-                                <h2>4,121 MB</h2>
-                                <div class="text">Registered capital</div>
-                            </div>
-                            <div class="single-item">
-                                <div class="icon-box"><i class="flaticon-repair"></i></div>
-                                <h2>2000+</h2>
-                                <div class="text">Completed work</div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 inner-column">
+                            <div class="inner-box clearfix">
+                                <div class="single-item">
+                                    <div class="icon-box"><i class="flaticon-idea"></i></div>
+                                    <h2>65%</h2>
+                                    <div class="text">Growth in turnover over last 2 years</div>
+                                </div>
+                                <div class="single-item">
+                                    <div class="icon-box"><i class="flaticon-pollution"></i></div>
+                                    <h2>4,121 MB</h2>
+                                    <div class="text">Registered capital</div>
+                                </div>
+                                <div class="single-item">
+                                    <div class="icon-box"><i class="flaticon-repair"></i></div>
+                                    <h2>2000+</h2>
+                                    <div class="text">Completed work</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section> -->
+            </section> -->
     <!-- oilgas-section end -->
 
 
@@ -198,7 +198,8 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 inner-column">
                     <div class="inner-content wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <figure class="image-box"><img src="frontend/images/resource/weare-1.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="frontend/images/resource/weare-1.jpg" alt="">
+                        </figure>
                         <div class="inner-box">
                             <div class="link-btn"><a href="#"><i class="flaticon-slim-right"></i></a></div>
                             <div class="text-content">
@@ -274,65 +275,25 @@
     <!-- growth-section end -->
 
 
-    <!-- testimonial-style-three -->
-    <section class="testimonial-style-three centred">
+    <!-- team-style-two -->
+    <section class="team-style-two about-page">
         <div class="container">
-            <div class="title-box">
-                <div class="top-text">Testimonial</div>
-                <div class="sec-title">
-                    <h1>What people say about us</h1>
-                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print<br />graphic
-                        or web designs. The passage is attributed to an unknown</p>
-                </div>
+            <div class="sec-title">
+                <h1>Expertise Team</h1>
+                <p>Our experienced staff, combined with our global network, allow us to<br/>provide the support you need
+                </p>
             </div>
-            <div class="two-column-carousel owl-carousel owl-theme">
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."</div>
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-1.png" alt="">
-                            </figure>
-                            <h5>Tamim Anj</h5>
-                            <span class="designation">Systems Engineer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."</div>
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-2.png" alt="">
-                            </figure>
-                            <h5>Mahfuz Riad</h5>
-                            <span class="designation">Engineering and Technology</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- testimonial-style-three end -->
-
-
-    <!-- team-style-three -->
-    <section class="team-style-three">
-        <div class="container">
-            <div class="row">
+            <div class="four-item-carousel owl-carousel owl-theme">
                 @foreach ($teams as $team)
-                    <div class="col-lg-4 col-md-6 col-sm-12 team-block">
-                        <div class="team-block-two">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="#"><img
-                                            src="{{ env('APP_URL') . $team->image }}" alt=""></a></figure>
-                                <div class="lower-content">
-                                    <h4><a href="#">{{ $team->name }}</a></h4>
-                                    <span class="designation">{{ $team->designation }}</span>
-                                </div>
-                            </div>
+                <div class="team-block-two">
+                    <div class="inner-box">
+                        <figure class="image-box"><a href="#"><img src="{{ env('APP_URL') . $team->image }}" alt=""></a></figure>
+                        <div class="lower-content">
+                            <h4><a href="#">{{ $team->name }}</a></h4>
+                            <span class="designation">{{ $team->designation }}</span>
                         </div>
                     </div>
+                </div>
                 @endforeach
             </div>
         </div>
@@ -340,77 +301,123 @@
     <!-- team-style-two end -->
 
 
-    <!-- news-style-three -->
-    <section class="news-style-three">
+    <!-- testimonial-style-five -->
+    <section class="testimonial-style-five about-page centred">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 title-column">
-                    <div class="title-box wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <div class="top-text">Some News</div>
-                        <h1>News from around the world</h1>
-                        <div class="text">Subscribe today to make sure you are update to date on life</div>
-                        <div class="link-btn"><a href="#">Discover More Blog</a></div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                    <div class="news-block-two wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <h4><a href="blog-single.blade.php">Leverage multiple forecast methods to determine</a></h4>
-                            <div class="post-info">by Mahfuz Riad , on July 19</div>
-                            <div class="text">Enterprise Iron’s deep industry experience in operational and technology
-                                consulting enables us to identify</div>
-                            <div class="link-btn"><a href="blog-single.blade.php">Read More<i
-                                        class="flaticon-slim-right"></i></a></div>
+            <div class="sec-title">
+                <div class="top-text">Client</div>
+                <h1>See what our customers say</h1>
+            </div>
+            <div class="three-column-carousel owl-carousel owl-theme">
+                <div class="testimonial-content">
+                    <div class="inner-box">
+                        <div class="author-info">
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-3.png" alt=""></figure>
+                            <h5>Tamim Anj</h5>
+                            <span class="designation">Febric Indusrtries CTO</span>
+                        </div>
+                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
+                            environment."
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                    <div class="news-block-two wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <h4><a href="blog-single.blade.php">Plan and adjust projects on the fly</a></h4>
-                            <div class="post-info">by Mahfuz Riad , on July 20</div>
-                            <div class="text">Factory OS is revolutionizing home construction. We’ve combined pioneering
-                                technology with tried</div>
-                            <div class="link-btn"><a href="blog-single.blade.php">Read More<i
-                                        class="flaticon-slim-right"></i></a></div>
+                <div class="testimonial-content">
+                    <div class="inner-box">
+                        <div class="author-info">
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-4.png" alt=""></figure>
+                            <h5>Anjek Mac</h5>
+                            <span class="designation">Ecology Engineer</span>
+                        </div>
+                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
+                            environment."
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="inner-box">
+                        <div class="author-info">
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-5.png" alt=""></figure>
+                            <h5>Tom Cruse</h5>
+                            <span class="designation">CEO</span>
+                        </div>
+                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
+                            environment."
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="inner-box">
+                        <div class="author-info">
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-3.png" alt=""></figure>
+                            <h5>Tamim Anj</h5>
+                            <span class="designation">Febric Indusrtries CTO</span>
+                        </div>
+                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
+                            environment."
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="inner-box">
+                        <div class="author-info">
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-4.png" alt=""></figure>
+                            <h5>Anjek Mac</h5>
+                            <span class="designation">Ecology Engineer</span>
+                        </div>
+                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
+                            environment."
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="inner-box">
+                        <div class="author-info">
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-5.png" alt=""></figure>
+                            <h5>Tom Cruse</h5>
+                            <span class="designation">CEO</span>
+                        </div>
+                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
+                            environment."
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="inner-box">
+                        <div class="author-info">
+                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-3.png" alt=""></figure>
+                            <h5>Tamim Anj</h5>
+                            <span class="designation">Febric Indusrtries CTO</span>
+                        </div>
+                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
+                            environment."
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- news-style-three end -->
+    <!-- testimonial-style-five end -->
 
 
-    <!-- subscribe-style-two -->
-    <section class="subscribe-style-two">
+    <!-- subscribe-section -->
+    <section class="subscribe-section about-page bg-color-3">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 left-column">
-                    <div class="left-content">
-                        <h3>Work With Us</h3>
-                        <div class="btn-box"><a href="#">View Open Construction</a></div>
+            <div class="inner-box">
+                <figure class="icon-box"><img src="frontend/images/icons/paper-plane.png" alt=""></figure>
+                <div class="content-box">
+                    <h2>Get Subscribed Now!</h2>
+                    <div class="text">The latest agopa news, articles, and resources, sent straight to your<br/>inbox
+                        every month.
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 right-column">
-                    <div class="right-content">
-                        <div class="inner-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <div class="video-box"><a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s"
-                                    class="lightbox-image" data-caption=""><i class="fas fa-play"></i></a></div>
-                            <h2 class="phone"><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></h2>
-                            <div class="text">Make Quick Call for any Kinds of<br />Industries Question</div>
-                            <h3>Sign up for updates</h3>
-                            <form action="#" method="post" class="subscribe-form">
-                                <div class="form-group">
-                                    <input type="email" name="email" placeholder="Email Address" required="">
-                                    <button type="submit">Subscribe</button>
-                                </div>
-                            </form>
+                    <form action="#" method="post" class="subscribe-form">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Type Your Email" required="">
+                            <button type="submit">Subscribe Now</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    <!-- subscribe-style-two end -->
+    <!-- subscribe-section end -->
 @endsection
