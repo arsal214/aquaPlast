@@ -5,15 +5,12 @@
 @endsection
 
 @section('content')
-<section class="page-title blog-page">
-    <div class="col mx-auto news-block">
-        <figure class="image-box"><a href="{{route('blogShow',$blog->id)}}"><img src="{{$blog->image}}" alt=""></a></figure>
-    </div>
-</section>
-
 
     <!-- blog-single -->
     <section class="blog-single sidebar-page-container">
+        <div class="col mx-auto news-block">
+            <figure class="image-box"><a href="{{route('blogShow',$blog->id)}}"><img src="{{$blog->image}}" alt=""></a></figure>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 content-side">
