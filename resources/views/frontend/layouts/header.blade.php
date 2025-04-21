@@ -36,8 +36,8 @@
             <div class="inner-container clearfix">
 
                 <ul class="header-nav pull-right">
-                    <li class="phone"><i class="flaticon-telephone-auricular-with-cable"></i><a href="tel:{{adminSettings('admin_app_contact')}}">
-                            {{adminSettings('admin_app_contact')}}
+                    <li class="phone"><i class="flaticon-telephone-auricular-with-cable"></i><a href="tel:0092418545008">
+                        0092418545008
                         </a></li>
 
                 </ul>
