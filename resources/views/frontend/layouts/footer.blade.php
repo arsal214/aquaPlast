@@ -12,31 +12,31 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                         <div class="links-widget company-widget footer-widget">
-                            <h4 class="widget-title">Company</h4>
+                            <h4 class="widget-title">Quick navigation</h4>
                             <div class="widget-content">
                                 <ul>
-                                    <li><a href="{{ url('/team') }}">Team</a></li>
-                                    <li><a href="{{  url('/term-conditions') }}">Term & Conditions</a></li>
-                                    <li><a href="{{ url('privacy-policy') }}">Privacy Policy</a></li>
-                                    <li><a href="#">Company</a></li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="{{ url('/team') }}">Home</a></li>
+                                    <li><a href="{{ url('/about') }}">About</a></li>
                                     <li><a href="{{ url('contact') }}">Contact</a></li>
+                                    <li><a href="{{  url('/term-conditions') }}">Term & Conditions</a></li>
+                                    <li><a href="{{ url('privacy-policy') }}">Privacy Policy</a></li>                                    
+                                    
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                         <div class="links-widget footer-widget">
-                            <h4 class="widget-title">Products</h4>
+                            <h4 class="widget-title">Categorize </h4>
                             <div class="widget-content">
                                 <?php
-                                use App\Models\Product;
+                                use App\Models\Category;
 
-                                $products = Product::latest()->limit(5)->get();
+                                $products = Category::latest()->limit(5)->get();
                                 ?>
                                 <ul>
                                    @foreach ($products as $product)
-                                       <li> <a href="{{route('productShow', $product->id)}}"> {{ $product->name }} </a></li>
+                                       <li> <a href="#"> {{ $product->name }} </a></li>
                                    @endforeach
                                 </ul>
                             </div>

@@ -22,7 +22,7 @@
                     <div class="blog-single-content">
 
 
-                        {!! $privacyPolicy?->body !!}
+                        {!! $privacyPolicy?->description !!}
                     </div>
                 </div>
             </div>

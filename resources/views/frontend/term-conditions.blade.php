@@ -22,7 +22,7 @@
                     <div class="blog-single-content">
 
 
-                        {!! $termConditions->body !!}
+                        {!! $termConditions->description !!}
                     </div>
                 </div>
             </div>
