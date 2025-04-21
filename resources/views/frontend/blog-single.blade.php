@@ -5,8 +5,14 @@
 @endsection
 
 @section('content')
-<section class="page-title blog-page" style="background-image:url({{ env('APP_URL') . $blog->image }})">
-    
+<section class="page-title blog-page">
+    <div class="col mx-auto news-block">
+        <div class="news-block-two news-block-three wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+            <div class="inner-box">
+                <figure class="image-box"><a href="{{route('blogShow',$blog->id)}}"><img src="{{$blog->image}}" alt=""></a></figure>
+            </div>
+        </div>
+    </div>
 </section>
 
 
@@ -39,7 +45,7 @@
                                         <input type="email" name="email" placeholder="Your Email" required>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                        <button type="submit">Leave a comment</button>
+                                        <button type="button">Leave a comment</button>
                                     </div>
                                 </div>
                             </form>

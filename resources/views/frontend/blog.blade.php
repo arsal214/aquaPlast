@@ -9,12 +9,12 @@
 
 
     <!-- page-title-two -->
-    <section class="page-title blog-page" style="background-image: url(frontend/images/background/page-title-9.jpg);">
-        <div class="container">
+    <section class="page-title blog-page" style="background-image: url({{ asset('images/settings/'.adminSettings('blog_page_banner_image')) }});">
+        {{-- <div class="container">
             <div class="content-box">
                 <h1>Our Latest Blogs</h1>
             </div>
-        </div>
+        </div> --}}
     </section>
     <!-- page-title-two end -->
 

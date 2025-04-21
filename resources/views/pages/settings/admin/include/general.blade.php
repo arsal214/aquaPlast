@@ -17,6 +17,11 @@
         <x-input col="4" title="Favicon" name="values[admin_app_favicon]" type="dropify" :defaultFile="asset('images/settings/'.adminSettings('admin_app_favicon')) ?? null"
             dropifyHeight="205" />
 
+            <x-input col="4" title="Team Page Banner " name="values[team_page_banner_image]" type="dropify" :defaultFile="asset('images/settings/'.adminSettings('team_page_banner_image')) ?? null"
+            dropifyHeight="205" />
+
+            <x-input col="4" title="Blog Page Banner" name="values[blog_page_banner_image]" type="dropify" :defaultFile="asset('images/settings/'.adminSettings('blog_page_banner_image')) ?? null"
+            dropifyHeight="205" />
         {{-- <x-input col="12" title="Contact" name="values[admin_app_contact]" :value="adminSettings('admin_app_contact')" />
 
         <x-input col="12" title="Address" type="textarea" name="values[admin_app_address]" :value="adminSettings('admin_app_address')" /> --}}

@@ -7,12 +7,12 @@
 @section('content')
     <!-- contact-banner -->
     <section class="contact-banner centred" style="background-image: url({{ env('APP_URL') . $contact->background_image }});">
-        <div class="container">
+        {{-- <div class="container">
             <div class="content-box">
                 <h1>Contact Us</h1>
                 <h3>If you have any general enquiries, we'd love to hear from you</h3>
             </div>
-        </div>
+        </div> --}}
     </section>
     <!-- contact-banner end -->
 
@@ -58,8 +58,8 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 form-column">
                     <div class="contact-form-area">
-                        <h2>Drop us a line</h2>
-                        <form method="post" action="sendemail.php" id="contact-form" class="default-form">
+                        <h2>Get In Touch</h2>
+                        <form method="post" action="#" id="contact-form" class="default-form">
                             <div class="form-group">
                                 <input type="text" name="username" placeholder="Your Name*" required>
                             </div>
@@ -76,7 +76,7 @@
                                 <textarea name="message" placeholder="Your Message"></textarea>
                             </div>
                             <div class="form-group message-btn">
-                                <button type="submit" class="theme-btn" name="submit-form">Submit a Message</button>
+                                <button type="button" class="theme-btn" name="submit-form">Submit a Message</button>
                             </div>
                         </form>
                     </div>
@@ -88,7 +88,7 @@
                             id="contact-google-map"
                             data-map-lat="40.712776"
                             data-map-lng="-74.005974"
-                            data-icon-path="images/icons/map-marker.png"
+                            data-icon-path="{{ asset('frontend/images/icons/map-marker.png') }}"
                             data-map-title="Brooklyn, New York, United Kingdom"
                             data-map-zoom="12"
                             data-markers='{
