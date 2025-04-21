@@ -90,13 +90,13 @@
 
 
                             <div class="post-widget sidebar-widget">
-                                <h3 class="widget-title">Trend Product</h3>
+                                <h3 class="widget-title">Featured Product</h3>
                                 <div class="product-post">
 
-                                    @foreach($trendProducts as $tprouct)
+                                    @foreach($trendProducts as $tproduct)
                                     <div class="post">
-                                        <figure class="post-thumb"><a href="product-show.blade.php"><img src="{{$tprouct?->images[0]?->image}}" alt=""></a></figure>
-                                        <h4><a href="{{route('productShow', $tprouct->id)}}">{{$product->name}}</a></h4>
+                                        <figure class="post-thumb"><a href="product-show.blade.php"><img src="{{$tproduct?->images[0]?->image}}" alt=""></a></figure>
+                                        <h4><a href="{{route('productShow', $tproduct->id)}}">{{$tproduct->name}}</a></h4>
                                     </div>
                                     @endforeach
 
@@ -154,7 +154,7 @@
                         <div class="box">
                             <div class="inner">
                                 <div class="icon-box"><i class="fas fa-thumbs-up"></i></div>
-                                <h4>Most reliable & durable</h4>
+                                <h4>Durability & Reliability</h4>
                                 {{-- <div class="text">Orders over $500.00</div> --}}
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                         <div class="box">
                             <div class="inner">
                                 <div class="icon-box"><i class="far fa-thumbs-up"></i></div>
-                                <h4>100% Made In US</h4>
+                                <h4>High-Quality & Affordable</h4>
                                 {{-- <div class="text">Respecting natur</div> --}}
                             </div>
                         </div>
@@ -176,7 +176,7 @@
                         <div class="box">
                             <div class="inner">
                                 <div class="icon-box"><i class="fas fa-lock"></i></div>
-                                <h4>Safety And Quality</h4>
+                                <h4>Tough & Trusted</h4>
                                 {{-- <div class="text">Delivery within 3-4<br />business days</div> --}}
                             </div>
                         </div>

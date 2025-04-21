@@ -42,7 +42,7 @@ class ProductRepository implements ProductRepositoryInterface
     {
             return Product::with(['images', 'faqs','category'])
                 ->where('status', 'Active')
-                ->paginate(6);
+                ->paginate(9);
 
 
     }
@@ -140,8 +140,9 @@ class ProductRepository implements ProductRepositoryInterface
     {
         $products = Product::with(['images', 'faqs','category'])
             ->where('status', 'Active')
-            ->where('is_featured', 'Active')
-            ->get();
+            ->where('is_featured', 'Yes')
+            ->latest()
+            ->limit(4)->get();
         return $products;
     }
 
@@ -150,7 +151,7 @@ class ProductRepository implements ProductRepositoryInterface
     {
         $products = Product::with(['images', 'faqs','category'])
             ->where('status', 'Active')
-            ->where('is_popular', 'Yes')->latest()
+            ->where('is_featured', 'Yes')->latest()
             ->limit(8)->get();
         return $products;
     }

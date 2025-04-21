@@ -67,9 +67,9 @@ class ContactUsController extends BaseController
     public function store(Request $request)
     {
         try {
-            $request->validate([
-                'title' => 'required',
-            ]);
+            // $request->validate([
+            //     // 'title' => 'required',
+            // ]);
 
             $data = $request->except(['background_image']);
             $data['background_image'] = $request->hasFile('background_image') ? $this->uploadFile($request->file('background_image'), 'contactUs') : null;
@@ -97,9 +97,9 @@ class ContactUsController extends BaseController
     public function update(Request $request, string $id)
     {
         try {
-            $request->validate([
-                'title' => 'required',
-            ]);
+            // $request->validate([
+            //     'title' => 'required',
+            // ]);
 
             $data = $request->except(['background_image']);
 

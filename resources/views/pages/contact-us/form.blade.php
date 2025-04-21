@@ -4,7 +4,7 @@
 
         <div class="row g-2">
 
-            <x-input col="12" name="title" :value="$contact->title ?? null" :required="true" />
+            {{-- <x-input col="12" name="title" :value="$contact->title ?? null" :required="true" /> --}}
 
 
             <x-input col="6" name="email" :value="$contact->email ?? null" :required="true" />

@@ -5,10 +5,6 @@
 @endsection
 
 @section('content')
-
-
-
-
     <!-- single-shop -->
     <section class="single-shop">
         <div class="container">
@@ -73,6 +69,8 @@
             </div>
 
             <div id="accordion">
+                <h2 class="product-price pb-3" style="text-align: center;">FREQUENTLY ASKED QUESTIONS  (FAQ’s)</h2>
+                
                 @foreach ($product->faqs as $index => $faq)
                     <div class="card">
                         <div class="card-header" id="heading{{ $index }}">
@@ -133,7 +131,7 @@
                         <div class="box">
                             <div class="inner">
                                 <div class="icon-box"><i class="fas fa-truck"></i></div>
-                                <h4>Most reliable & durable</h4>
+                                <h4>Durability & Reliability</h4>
                                 {{-- <div class="text">Orders over $500.00</div> --}}
                             </div>
                         </div>
@@ -144,7 +142,7 @@
                         <div class="box">
                             <div class="inner">
                                 <div class="icon-box"><i class="far fa-thumbs-up"></i></div>
-                                <h4>100% Made In Pakistan</h4>
+                                <h4>High-Quality & Affordable</h4>
                                 {{-- <div class="text">Respecting natur</div> --}}
                             </div>
                         </div>
@@ -155,7 +153,7 @@
                         <div class="box">
                             <div class="inner">
                                 <div class="icon-box"><i class="fas fa-lock"></i></div>
-                                <h4>Safety And Quality</h4>
+                                <h4>Tough & Trusted</h4>
                                 {{-- <div class="text">Delivery within 3-4<br />business days</div> --}}
                             </div>
                         </div>

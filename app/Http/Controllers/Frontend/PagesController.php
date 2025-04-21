@@ -63,8 +63,8 @@ class PagesController extends Controller
         $product->load(['category', 'images','faqs']);
         $relatedProducts = Product::with(['images'])->where('category_id', $product->category_id)
             ->where('id', '!=', $product->id) // Exclude current product
-            ->inRandomOrder() // Randomize results
-            ->limit(3) // Get only 3 products
+            ->inRandomOrder()
+            ->limit(4) 
             ->get();
         return view('frontend.product-show', compact('product','relatedProducts'));
     }
