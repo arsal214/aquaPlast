@@ -50,7 +50,7 @@
         <div class="container">
             <div >
                 <div class="nav-outer clearfix">
-                    <div class="menu-area pull-left clearfix">
+                    <div class="menu-area pull-right clearfix">
                         <figure class="logo-box"><a href="{{url('/')}}"><img src="{{asset('images/settings/'.adminSettings('admin_app_logo_white'))}}" width="100px" height="100px" alt=""></a></figure>
                         <nav class="main-menu navbar-expand-lg">
                             <div class="navbar-header">
