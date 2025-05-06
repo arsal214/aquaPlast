@@ -11,12 +11,12 @@
 
             @foreach ($sliders as $slider)
                 <div class="slide" style="background-image:url({{ env('APP_URL') . $slider->thumbnail }})">
-                    <div class="container">
+                    {{-- <div class="container">
                         <div class="content-box">
                             <h1>{{ $slider->title }}</h1>
                             <h3>{{ $slider->description }}</h3>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             @endforeach
 
@@ -67,8 +67,7 @@
                         <div class="sec-title">
                             <h1>Our Products</h1>
                         </div>
-                        <div class="text">Our experienced staff, combined with our global network, allow us to provide the
-                            support you need</div>
+                        <div class="text">At Aqua Plast Industry, we deliver high-quality sanitary and plumbing products designed with precision and built for durability — trusted for every home and building</div>
                     </div>
                     <div class="filters">
                         <ul class="filter-tabs filter-btns centred clearfix">
@@ -309,90 +308,19 @@
                 <h1>See what our customers say</h1>
             </div>
             <div class="three-column-carousel owl-carousel owl-theme">
+                @foreach ($testimoinals as $testimoinal)
                 <div class="testimonial-content">
                     <div class="inner-box">
                         <div class="author-info">
-                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-3.png" alt=""></figure>
-                            <h5>Tamim Anj</h5>
-                            <span class="designation">Febric Indusrtries CTO</span>
+                            <figure class="author-thumb"><img src="{{ $testimoinal->image }}" alt=""></figure>
+                            <h5>{{ $testimoinal->name }}</h5>
+                            <span class="designation">{{ $testimoinal->designation }}</span>
                         </div>
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-4.png" alt=""></figure>
-                            <h5>Anjek Mac</h5>
-                            <span class="designation">Ecology Engineer</span>
-                        </div>
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."
+                        <div class="text">{{ $testimoinal->comment }}
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-5.png" alt=""></figure>
-                            <h5>Tom Cruse</h5>
-                            <span class="designation">CEO</span>
-                        </div>
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-3.png" alt=""></figure>
-                            <h5>Tamim Anj</h5>
-                            <span class="designation">Febric Indusrtries CTO</span>
-                        </div>
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-4.png" alt=""></figure>
-                            <h5>Anjek Mac</h5>
-                            <span class="designation">Ecology Engineer</span>
-                        </div>
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-5.png" alt=""></figure>
-                            <h5>Tom Cruse</h5>
-                            <span class="designation">CEO</span>
-                        </div>
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="inner-box">
-                        <div class="author-info">
-                            <figure class="author-thumb"><img src="frontend/images/resource/testimonial-3.png" alt=""></figure>
-                            <h5>Tamim Anj</h5>
-                            <span class="designation">Febric Indusrtries CTO</span>
-                        </div>
-                        <div class="text">"Compared to other design software, Acto has a more intuitive and stable
-                            environment."
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

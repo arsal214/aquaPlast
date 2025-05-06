@@ -6332,8 +6332,8 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 .slider-style-four .slide:before {
   position: absolute;
-  content: '';
-  background: rgba(62, 0, 0, 0.6);
+  /* content: ''; */
+  /* background: rgba(62, 0, 0, 0.6); */
   width: 100%;
   height: 100%;
   left: 0px;
@@ -19624,4 +19624,13 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 .contact-info-section.contact-page-1{
   padding: 100px 0px 50px 0px;
+}
+
+@media (max-width: 768px){
+  .pull-sm-right{
+    float: right;
+  }
+  .w-sm-100{
+    width:100%
+  }
 }

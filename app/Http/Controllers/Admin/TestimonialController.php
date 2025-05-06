@@ -20,10 +20,10 @@ class TestimonialController extends BaseController
         private TestimonialRepositoryInterface $testimonialRepository,
     )
     {
-        $this->middleware('permission:testimonials-list', ['only' => ['index', 'show']]);
-        $this->middleware('permission:testimonials-create', ['only' => ['store']]);
-        $this->middleware('permission:testimonials-edit', ['only' => ['edit', 'update', 'change']]);
-        $this->middleware('permission:testimonials-delete', ['only' => ['destroy']]);
+        // $this->middleware('permission:testimonials-list', ['only' => ['index', 'show']]);
+        // $this->middleware('permission:testimonials-create', ['only' => ['store']]);
+        // $this->middleware('permission:testimonials-edit', ['only' => ['edit', 'update', 'change']]);
+        // $this->middleware('permission:testimonials-delete', ['only' => ['destroy']]);
     }
 
     /**

@@ -1,7 +1,7 @@
 <x-app-layout title="Testimonials">
 
     <x-breadcrumb title="Testimonials">
-        @can('testimonials-create')
+        {{-- @can('testimonials-create') --}}
         <a href="{{ route('pages.testimonials.create') }}"
            class="btn btn-outline-primary btn-labeled btn-labeled-start rounded-pill">
             <span class="btn-labeled-icon bg-primary text-white rounded-pill">
@@ -9,7 +9,7 @@
             </span>
             Create New
         </a>
-        @endcan
+        {{-- @endcan --}}
     </x-breadcrumb>
 
     <!-- Content area -->

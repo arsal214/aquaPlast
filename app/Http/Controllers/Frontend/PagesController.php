@@ -13,6 +13,7 @@ use App\Models\ContactUs;
 use App\Models\PrivacyPolicy;
 use App\Models\Product;
 use App\Models\TermCondition;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -37,7 +38,8 @@ class PagesController extends Controller
         $category = $this->productCategoryRepository->parentCategory();
         $contact = ContactUs::first();
         $teams = $this->teamRepository->activeList();
-        return view('frontend.index',compact('products','category','sliders','contact','teams'));
+        $testimoinals = Testimonial::where('status', 'Active')->get();
+        return view('frontend.index',compact('products','category','sliders','contact','teams','testimoinals'));
     }
 
     public function about()

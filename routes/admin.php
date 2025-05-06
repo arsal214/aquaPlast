@@ -136,7 +136,11 @@ Route::prefix('pages')->as('pages.')->group(function () {
     Route::get('contact-us/list', 'ContactUsController@list')->name('contact-us.list');
     Route::resource('contact-us', ContactUsController::class);
 
+   /* -------------------------  Testimonials Routes ------------------------ */
 
+   Route::patch('testimonials/change/{id}', 'TestimonialController@change')->name('testimonials.change');
+   Route::get('testimonials/list', 'TestimonialController@list')->name('testimonials.list');
+   Route::resource('testimonials', TestimonialController::class);
 
 
 

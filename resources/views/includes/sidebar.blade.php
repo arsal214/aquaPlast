@@ -109,6 +109,9 @@
 
                          <x-nav-item route="pages.contact-us.index" active="pages.contact-us.*"
                                         title="Contact Us"/> 
+
+                                        <x-nav-item route="pages.testimonials.index" active="pages.testimonials.*"
+                                        title="Testimonials"/>
                                          
 
                     </x-nav-item>

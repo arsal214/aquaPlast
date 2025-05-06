@@ -49,8 +49,8 @@
     <div class="header-bottom">
         <div class="container">
             <div >
-                <div class="nav-outer clearfix">
-                    <div class="menu-area pull-right clearfix">
+                <div class="nav-outer d-flex justify-content-between align-items-center">
+                    <div class="menu-area  clearfix d-flex align-items-center w-sm-100">
                         <figure class="logo-box"><a href="{{url('/')}}"><img src="{{asset('images/settings/'.adminSettings('admin_app_logo_white'))}}" width="100px" height="100px" alt=""></a></figure>
                         <nav class="main-menu navbar-expand-lg">
                             <div class="navbar-header">
@@ -61,7 +61,7 @@
                                     <span class="icon-bar"></span>
                                 </button>
                             </div>
-                            <div class="navbar-collapse collapse clearfix">
+                            <div class="navbar-collapse collapse  clearfix">
                                 <ul class="navigation clearfix">
                                     <li class="{{ Request::is('/') ? 'current dropdown' : 'dropdown' }}">
                                         <a href="{{ url('/') }}">Home</a>
@@ -86,14 +86,14 @@
                             </div>
                         </nav>
                     </div>
-                    <div class="info-box pull-right clearfix">
+                    <div class="info-box  clearfix">
                         <div class="search-box">
                             <div class="header-flyout-searchbar">
                                 <i class="fa fa-search"></i>
                             </div>
                         </div>
 
-                        <div class="btn-box"><a href="contact.html"><i class="fas fa-arrow-right"></i>Get Quick Support</a></div>
+                        <div class="btn-box"><a href="{{ url('contact') }}"><i class="fas fa-arrow-right"></i>Get Quick Support</a></div>
                     </div>
                 </div>
             </div>
