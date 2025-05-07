@@ -10,12 +10,12 @@
     <!-- about-banner -->
     <section class="about-banner"
              style="background-image: url({{ env('APP_URL') . $about->background_image }});">
-        <div class="container">
+        {{-- <div class="container">
             <div class="content-box">
                 <h1>{{ $about->title }}</h1>
             
             </div>
-        </div>
+        </div> --}}
     </section>
     <!-- about-banner end -->
 
