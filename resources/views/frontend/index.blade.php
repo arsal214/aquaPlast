@@ -191,6 +191,14 @@
                                             stations.</div>
                                     </div>
                                 </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 single-column">
+                                    <div class="single-item">
+                                        <div class="icon-box"><i class="flaticon-factory-machine"></i></div>
+                                        <h5><a href="#">Planning Oil and Gas</a></h5>
+                                        <div class="text">Petroleum refiners, fuel transport and end-user sales at gas
+                                            stations.</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -199,14 +207,7 @@
                     <div class="inner-content wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                         <figure class="image-box"><img src="frontend/images/resource/weare-1.jpg" alt="">
                         </figure>
-                        <div class="inner-box">
-                            <div class="link-btn"><a href="#"><i class="flaticon-slim-right"></i></a></div>
-                            <div class="text-content">
-                                <h2>The safe choice for your supply needs Oil & Gas</h2>
-                                <div class="text">Analyze overall plant capacity by planning for incoming supply and
-                                    market demand</div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -217,7 +218,7 @@
 
 
     <!-- growth-section -->
-    <section class="growth-section">
+    {{-- <section class="growth-section">
         <div class="image-column" style="background-image: url(frontend/images/background/growth-bg.jpg);"></div>
         <div class="container">
             <div class="row">
@@ -270,7 +271,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- growth-section end -->
 
 
