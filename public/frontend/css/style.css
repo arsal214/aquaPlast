@@ -3209,7 +3209,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 .main-footer .footer-bottom{
   position: relative;
   display: block;
-  padding: 38px 0px;
+  padding: 38px 15px;
   z-index: 1;
 }
 
