@@ -107,7 +107,7 @@
                                 </div>
                                 <div class="lower-content">
                                     <h4><a href="{{route('productShow', $pro->id)}}">{{$pro->name}}</a></h4>
-                                    <div class="btn-box"><a href="{{route('productShow', $pro->id)}}">See Detail</a></div>
+                                    <div class="btn-box" style="text-align: center;"><a href="{{route('productShow', $pro->id)}}">See Detail</a></div>
                                 </div>
                             </div>
                             
