@@ -63,7 +63,7 @@
             <div class="sortable-masonry">
                 <div class="top-content clearfix">
                     <div class="title-box">
-                        <div class="top-text">Done Case</div>
+                        {{-- <div class="top-text">Done Case</div> --}}
                         <div class="sec-title">
                             <h1>Our Products</h1>
                         </div>

@@ -36,9 +36,25 @@
             <div class="inner-container clearfix">
 
                 <ul class="header-nav pull-right">
-                    <li class="phone"><i class="flaticon-telephone-auricular-with-cable"></i><a href="tel:0092418545008">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>            
+
+                </ul>
+
+                <ul class="header-nav pull-left">
+                    <li class="phone"><i class="flaticon-telephone-auricular-with-cable"></i>
+                        <a href="tel:0092418545008">
                         0092418545008
-                        </a></li>
+                        </a>
+                    </li>
+                     <li class="phone"><i class="flaticon-mail"></i>
+                        <a href="mail:info@aquaplastindustry.com">
+                        info@aquaplastindustry.com
+                        </a>
+                    </li>
 
                 </ul>
             </div>

@@ -20,12 +20,12 @@
                                     @endforeach
                                 </ul>
 
-                                <ul class="thumbs-carousel owl-carousel owl-theme centred">
+                                {{-- <ul class="thumbs-carousel owl-carousel owl-theme centred">
                                     @foreach($product->images as $img)
                                     <li><img src="{{$img->image}}" alt=""></li>
                                     @endforeach
 
-                                </ul>
+                                </ul> --}}
                             </div>
                         </div>
                     </div>
