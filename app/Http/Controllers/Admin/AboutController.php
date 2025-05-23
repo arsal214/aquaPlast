@@ -69,8 +69,6 @@ class AboutController extends BaseController
         try {
             $request->validate([
                 'title' => 'required',
-                'for_supplier' => 'required',
-                'for_captains' => 'required',
                 'our_aim' => 'required',
             ]);
 
@@ -102,8 +100,6 @@ class AboutController extends BaseController
         try {
             $request->validate([
                 'title' => 'required',
-                'for_supplier' => 'required',
-                'for_captains' => 'required',
                 'our_aim' => 'required',
             ]);
 

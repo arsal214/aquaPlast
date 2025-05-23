@@ -37,16 +37,6 @@
     <!-- shop-style-two -->
     <section class="shop-style-two shop-page-2">
         <div class="container">
-            {{-- <div class="item-sorting clearfix">
-                <div class="result-column pull-left">
-                    <h6>Showing 1–9 of 9 results</h6>
-                </div>
-                <div class="select-column select-box pull-right">
-                    <select class="selectmenu">
-                        <option selected="selected">New product</option>
-                    </select>
-                </div>
-            </div> --}}
             <div class="upper-box">
                 <div class="row">
                     <div class="col-lg-3 col-md-12 col-sm-12 sidebar-side">
