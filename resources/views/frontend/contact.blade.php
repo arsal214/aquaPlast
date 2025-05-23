@@ -28,18 +28,24 @@
 @endif
 
     <!-- contact-banner Mobile Banner -->
-    <section class="contact-banner centred d-sm-none d-block" style="background-image: url({{ env('APP_URL') . $contact->background_image }});">
+    {{-- <section class="contact-banner centred d-sm-none d-block" style="background-image: url({{ env('APP_URL') . $contact->background_image }});"> --}}
         {{-- <div class="container">
             <div class="content-box">
                 <h1>Contact Us</h1>
                 <h3>If you have any general enquiries, we'd love to hear from you</h3>
             </div>
         </div> --}}
-    </section>
+    {{-- </section> --}}
     {{-- Desktop Banner --}}
-     <section class="contact-banner centred d-none d-sm-block" style="background-image: url({{ env('APP_URL') . $contact->background_image }});">
+     {{-- <section class="contact-banner centred d-none d-sm-block" style="background-image: url({{ env('APP_URL') . $contact->background_image }});">
+            </section> --}}
+
+
+            <section class="contact-banner centred d-none d-sm-block" style="background-image: url({{ env('APP_URL') . $contact->background_image }});">
             </section>
     <!-- contact-banner end -->
+
+
 
 
     <!-- contact-info-section -->

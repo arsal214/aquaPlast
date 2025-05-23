@@ -205,7 +205,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 inner-column">
                     <div class="inner-content wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <figure class="image-box"><img src="frontend/images/resource/weare-1.jpg" alt="">
+                        <figure class="image-box"><img src="frontend/images/resource/why-us.png" alt="">
                         </figure>
                         
                     </div>
