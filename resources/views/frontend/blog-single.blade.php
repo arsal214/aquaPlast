@@ -20,7 +20,11 @@
     <!-- blog-single -->
     <section class="blog-single sidebar-page-container">
         <div class="col mx-auto news-block">
-            <figure class="image-box"><a href="{{route('blogShow',$blog->id)}}"><img src="{{$blog->image}}" alt=""></a></figure>
+            <figure class="image-box"><a href="{{route('blogShow',$blog->id)}}">
+                <div style="text-align: center;">
+                <img src="{{$blog->image}}" alt="" style="max-width:60%"></a>
+                </div>
+            </figure>
         </div>
         <div class="container">
             <div class="row">
