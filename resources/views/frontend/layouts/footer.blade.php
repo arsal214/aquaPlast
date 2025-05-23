@@ -15,7 +15,7 @@
                             <h4 class="widget-title">Quick navigation</h4>
                             <div class="widget-content">
                                 <ul>
-                                    <li><a href="{{ url('/team') }}">Home</a></li>
+                                    <li><a href="{{ url('/') }}">Home</a></li>
                                     <li><a href="{{ url('/about') }}">About</a></li>
                                     <li><a href="{{ url('/team') }}">Team</a></li>
                                     <li><a href="{{ url('/blog') }}">Blogs</a></li>
