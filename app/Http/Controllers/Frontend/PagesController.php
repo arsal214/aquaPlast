@@ -50,7 +50,8 @@ class PagesController extends BaseController
     {
         $about = $this->aboutRepository->detail();
         $teams = $this->teamRepository->activeList();
-        return view('frontend.about',compact('about','teams'));
+        $testimoinals = Testimonial::where('status', 'Active')->get();
+        return view('frontend.about',compact('about','teams','testimoinals'));
     }
 
     public function products()
