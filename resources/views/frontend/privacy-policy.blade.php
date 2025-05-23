@@ -6,11 +6,7 @@
 
 @section('content')
 <section class="page-title blog-page" style="background-image:url({{ env('APP_URL') . $privacyPolicy?->image }})">
-    <div class="container">
-        <div class="content-box">
-            <h1>{{ $privacyPolicy?->title }}</h1>
-        </div>
-    </div>
+    
 </section>
 
 

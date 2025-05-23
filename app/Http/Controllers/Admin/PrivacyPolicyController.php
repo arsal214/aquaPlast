@@ -63,8 +63,7 @@ class PrivacyPolicyController extends BaseController
     public function store(Request $request)
     {
         try {
-            $request->validate([
-                'title' => 'required',
+            $request->validate([            
                 'image' => 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
                 'description' => 'required',
             ]);
@@ -95,7 +94,6 @@ class PrivacyPolicyController extends BaseController
     {
         try {
             $request->validate([
-                'title' => 'required',
                 'description' => 'required',
             ]);
 

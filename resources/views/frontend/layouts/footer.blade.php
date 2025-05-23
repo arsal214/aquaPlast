@@ -7,7 +7,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                         <div class="logo-widget footer-widget">
                             <figure class="footer-logo"><a href="{{url('/')}}"><img src="{{asset('images/settings/'.adminSettings('admin_app_logo_white'))}}" width="100px" height="100px" alt=""></a></figure>
-                            <div class="text">Over 15 years of experience we’ll ensure you always get the best guidance.</div>
+                            <div class="text">Innovation, Strength, and Quality – Aqua Plast.</div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 footer-column">

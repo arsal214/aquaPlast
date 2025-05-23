@@ -64,7 +64,7 @@ class TermConditionController extends BaseController
     {
         try {
             $request->validate([
-                'title' => 'required',
+                // 'title' => 'required',
                 'image' => 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
                 'description' => 'required',
             ]);
@@ -95,7 +95,7 @@ class TermConditionController extends BaseController
     {
         try {
             $request->validate([
-                'title' => 'required',
+                // 'title' => 'required',
                 'description' => 'required',
             ]);
 

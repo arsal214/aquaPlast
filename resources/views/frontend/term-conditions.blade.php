@@ -6,11 +6,11 @@
 
 @section('content')
 <section class="page-title blog-page" style="background-image:url({{ env('APP_URL') . $termConditions->image }})">
-    <div class="container">
+    {{-- <div class="container">
         <div class="content-box">
             <h1>{{ $termConditions->title }}</h1>
         </div>
-    </div>
+    </div> --}}
 </section>
 
 
