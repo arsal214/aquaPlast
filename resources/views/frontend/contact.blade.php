@@ -41,7 +41,7 @@
             </section> --}}
 
 
-            <section class="contact-banner centred d-none d-sm-block" style="background-image: url({{ env('APP_URL') . $contact->background_image }});">
+            <section class="contact-banner centred" style="background-image: url({{ env('APP_URL') . $contact->background_image }});">
             </section>
     <!-- contact-banner end -->
 

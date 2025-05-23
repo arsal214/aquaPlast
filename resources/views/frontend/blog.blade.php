@@ -9,13 +9,16 @@
 
 
     <!-- page-title-two -->
-    <section class="page-title blog-page" style="background-image: url({{ asset('images/settings/'.adminSettings('blog_page_banner_image')) }});">
+    {{-- <section class="page-title blog-page" style="background-image: url({{ asset('images/settings/'.adminSettings('blog_page_banner_image')) }});"> --}}
         {{-- <div class="container">
             <div class="content-box">
                 <h1>Our Latest Blogs</h1>
             </div>
         </div> --}}
-    </section>
+    {{-- </section> --}}
+
+     <section class="contact-banner centred" style="background-image: url({{ asset('images/settings/'.adminSettings('blog_page_banner_image')) }});">
+            </section>
     <!-- page-title-two end -->
 
 
