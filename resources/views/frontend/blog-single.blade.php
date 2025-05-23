@@ -5,6 +5,17 @@
 @endsection
 
 @section('content')
+@if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
+@if(session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
 
     <!-- blog-single -->
     <section class="blog-single sidebar-page-container">
@@ -26,10 +37,11 @@
                         <div class="comments-form-area">
                             <h2 class="group-title">Leave Reply</h2>
                             <div class="text">Your email address will not be published. Required fields are marked *</div>
-                            <form action="#" method="post" class="comment-form">
+                            <form action="{{ route('blogComment',$blog->id) }}" method="post" class="comment-form">
+                                @csrf
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                        <textarea name="message" placeholder="Type Message"></textarea>
+                                        <textarea name="comment" placeholder="Type Message"></textarea>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                         <input type="text" name="name" placeholder="Your Name" required>
@@ -38,7 +50,7 @@
                                         <input type="email" name="email" placeholder="Your Email" required>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                        <button type="button">Leave a comment</button>
+                                        <button type="submit">Leave a comment</button>
                                     </div>
                                 </div>
                             </form>

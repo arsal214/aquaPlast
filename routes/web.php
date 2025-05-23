@@ -33,11 +33,16 @@ Route::get('/blog', [PagesController::class, 'blog']);
 Route::get('/blogShow/{id}', [PagesController::class, 'blogShow'])->name('blogShow');
 
 
+Route::post('/blog-comment/{id}', [PagesController::class, 'blogComment'])->name('blogComment');
+
+
 Route::get('/contact', [PagesController::class, 'contact']);
 
 Route::get('/term-conditions', [PagesController::class, 'termConditions']);
 
 Route::get('/privacy-policy', [PagesController::class, 'privacyPolicy']);
+
+Route::post('/support', [PagesController::class, 'support'])->name('support');
 
 
 

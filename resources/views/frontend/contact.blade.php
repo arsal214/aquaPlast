@@ -5,8 +5,30 @@
 @endsection
 
 @section('content')
-    <!-- contact-banner -->
-    <section class="contact-banner centred" style="background-image: url({{ env('APP_URL') . $contact->background_image }});">
+
+@if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
+@if(session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
+@if($errors->any())
+    <div class="alert alert-danger">
+        <ul class="mb-0">
+            @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+    <!-- contact-banner Mobile Banner -->
+    <section class="contact-banner centred d-sm-none d-block" style="background-image: url({{ env('APP_URL') . $contact->background_image }});">
         {{-- <div class="container">
             <div class="content-box">
                 <h1>Contact Us</h1>
@@ -14,6 +36,9 @@
             </div>
         </div> --}}
     </section>
+    {{-- Desktop Banner --}}
+     <section class="contact-banner centred d-none d-sm-block" style="background-image: url({{ env('APP_URL') . $contact->background_image }});">
+            </section>
     <!-- contact-banner end -->
 
 
@@ -59,9 +84,10 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 form-column">
                     <div class="contact-form-area">
                         <h2>Get In Touch</h2>
-                        <form method="post" action="#" id="contact-form" class="default-form">
+                        <form method="post" action="{{ route('support') }}" id="contact-form" class="default-form">
+                            @csrf
                             <div class="form-group">
-                                <input type="text" name="username" placeholder="Your Name*" required>
+                                <input type="text" name="name" placeholder="Your Name*" required>
                             </div>
                             <div class="form-group">
                                 <input type="email" name="email" placeholder="Your Email*" required>
@@ -76,7 +102,7 @@
                                 <textarea name="message" placeholder="Your Message"></textarea>
                             </div>
                             <div class="form-group message-btn">
-                                <button type="button" class="theme-btn" name="submit-form">Submit a Message</button>
+                                <button type="submit" class="theme-btn" name="submit-form">Submit a Message</button>
                             </div>
                         </form>
                     </div>

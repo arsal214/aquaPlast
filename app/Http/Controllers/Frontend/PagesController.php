@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Http\Controllers\BaseController;
 use App\Http\Controllers\Controller;
 use App\Interfaces\AboutRepositoryInterface;
 use App\Interfaces\BlogRepositoryInterface;
@@ -9,14 +10,16 @@ use App\Interfaces\HomepageRepositoryInterface;
 use App\Interfaces\ProductCategoryRepositoryInterface;
 use App\Interfaces\ProductRepositoryInterface;
 use App\Interfaces\TeamRepositoryInterface;
+use App\Models\BlogComment;
 use App\Models\ContactUs;
 use App\Models\PrivacyPolicy;
 use App\Models\Product;
+use App\Models\SupportQuery;
 use App\Models\TermCondition;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
-class PagesController extends Controller
+class PagesController extends BaseController
 {
 
     public function __construct(
@@ -111,5 +114,40 @@ class PagesController extends Controller
         return view('frontend.contact',compact('contact'));
     }
 
+
+    public function blogComment(Request $request,$id){
+        try {
+            $request->validate([
+                'name' => 'required',
+                'email' => 'required',
+                'comment' => 'required',
+            ]);
+            $data = $request->all();
+            $data['blog_id'] = $id;
+            BlogComment::create($data);        
+        } catch (\Throwable $th) {
+            return $this->redirectError($th->getMessage());
+        }
+            return redirect()->back()->with('success', 'Blog Comment Save successfully');
+        
+    }
+
+
+
+    public function support(Request $request){
+         try {
+            $request->validate([
+                'name' => 'required',
+                'email' => 'required',
+                'message' => 'required',
+            ]);
+             $data = $request->all();
+            
+            SupportQuery::create($data);        
+        } catch (\Throwable $th) {
+            return $this->redirectError($th->getMessage());
+        }
+            return redirect()->back()->with('success', 'Your query was submitted');
+    }
 
 }
