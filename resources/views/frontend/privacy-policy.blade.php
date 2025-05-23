@@ -5,10 +5,13 @@
 @endsection
 
 @section('content')
-<section class="page-title blog-page" style="background-image:url({{ env('APP_URL') . $privacyPolicy?->image }})">
+{{-- <section class="page-title blog-page" style="background-image:url({{ env('APP_URL') . $privacyPolicy?->image }})">
     
-</section>
+</section> --}}
 
+
+ <section class="contact-banner centred" style="background-image: url({{ env('APP_URL') . $privacyPolicy->image }});">
+            </section>
 
     <!-- blog-single -->
     <section class="blog-single sidebar-page-container">
