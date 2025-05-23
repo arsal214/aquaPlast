@@ -65,11 +65,11 @@
         <div class="footer-bottom clearfix">
             <div class="copyright pull-left">{{adminSettings('admin_footer_text')}}</div>
             <ul class="footer-social pull-right">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+               <li><a href="https://www.facebook.com/share/194ADwe7KF/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/aquaplastindustry0?igsh=MTZxczNuc3pmZGJzdQ=="><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://wa.me/+923176289331"><i class="fab fa-whatsapp"></i></a></li>
                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>            
+                <li><a href="https://www.pinterest.com/aquaplastindustry0/"><i class="fab fa-pinterest"></i></a></li>                    
                 
             </ul>
         </div>
