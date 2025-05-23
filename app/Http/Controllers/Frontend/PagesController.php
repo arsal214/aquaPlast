@@ -14,6 +14,7 @@ use App\Models\BlogComment;
 use App\Models\ContactUs;
 use App\Models\PrivacyPolicy;
 use App\Models\Product;
+use App\Models\ProductSlider;
 use App\Models\SupportQuery;
 use App\Models\TermCondition;
 use App\Models\Testimonial;
@@ -58,7 +59,9 @@ class PagesController extends BaseController
         $products = $this->productRepository->activeListPaginate();
         $trendProducts = $this->productRepository->trendServices();
         $category = $this->productCategoryRepository->parentCategory();
-        return view('frontend.shop', compact('products', 'trendProducts', 'category'));
+        $productSliders = ProductSlider::all();   
+
+        return view('frontend.shop', compact('products', 'trendProducts', 'category','productSliders'));
     }
 
     public function productShow($id)

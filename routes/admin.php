@@ -6,24 +6,16 @@ use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\StaffController;
 use App\Http\Controllers\Admin\ProductCategoryController;
-use App\Http\Controllers\Admin\SupplierController;
-use App\Http\Controllers\Admin\CaptainController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Admin\ProductController;
-use App\Http\Controllers\Admin\PlanController;
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\HomePageController;
-use App\Http\Controllers\Admin\BoatController;
-use App\Http\Controllers\Admin\DepartmentController;
-use App\Http\Controllers\Admin\OrderController;
-use App\Http\Controllers\Admin\FAQController;
-use App\Http\Controllers\Admin\CrewController;
 use App\Http\Controllers\Admin\PrivacyPolicyController;
-use App\Http\Controllers\Admin\BriefController;
 use App\Http\Controllers\Admin\TermConditionController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\ContactUsController;
+use App\Http\Controllers\Admin\ProductSliderController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -141,6 +133,11 @@ Route::prefix('pages')->as('pages.')->group(function () {
    Route::patch('testimonials/change/{id}', 'TestimonialController@change')->name('testimonials.change');
    Route::get('testimonials/list', 'TestimonialController@list')->name('testimonials.list');
    Route::resource('testimonials', TestimonialController::class);
+
+
+
+   Route::get('product-slider/list', 'ProductSliderController@list')->name('product-slider.list');
+   Route::resource('product-slider', ProductSliderController::class);
 
 
 
