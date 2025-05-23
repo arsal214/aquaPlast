@@ -22,7 +22,7 @@
         <div class="col mx-auto news-block">
             <figure class="image-box"><a href="{{route('blogShow',$blog->id)}}">
                 <div style="text-align: center;">
-                <img src="{{$blog->image}}" alt="" style="max-width:60%"></a>
+                <img src="{{$blog->image}}" alt="" style="max-width:75%"></a>
                 </div>
             </figure>
         </div>
