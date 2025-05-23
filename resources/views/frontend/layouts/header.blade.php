@@ -51,7 +51,7 @@
                         </a>
                     </li>
                      <li class="phone"><i class="flaticon-mail"></i>
-                        <a href="mail:info@aquaplastindustry.com">
+                        <a href="mailto:info@aquaplastindustry.com">
                         info@aquaplastindustry.com
                         </a>
                     </li>
