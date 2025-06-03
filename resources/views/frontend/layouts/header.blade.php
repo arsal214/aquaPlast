@@ -103,11 +103,11 @@
                         </nav>
                     </div>
                     <div class="info-box  clearfix">
-                        <div class="search-box">
+                        {{-- <div class="search-box">
                             <div class="header-flyout-searchbar">
                                 <i class="fa fa-search"></i>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="btn-box"><a href="{{ url('contact') }}"><i class="fas fa-arrow-right"></i>Get Quick Support</a></div>
                     </div>
